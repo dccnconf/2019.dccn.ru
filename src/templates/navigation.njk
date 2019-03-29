@@ -1,0 +1,35 @@
+{% macro navbar(active) %}
+<nav id="main-nav" class="navbar navbar-expand-md navbar-dark">
+  <a href="index.html" class="navbar-brand">
+    <span class="align-middle">DCCN'19</span>
+  </a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav-content">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-nav-content">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link {% if active === 'about' %}active{% endif %}">
+          About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="cfp.html" class="nav-link {% if active === 'cfp' %}active{% endif %}">
+          Call for Papers
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="committees.html" class="nav-link {% if active === 'committees' %}active{% endif %}">
+          Committees
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="registration.html" class="nav-link {% if active === 'registration' %}active{% endif %}">
+          Registration & Fees
+        </a>
+      </li>
+      <li class="nav-item"><a href="venue.html" class="nav-link {% if active === 'venue' %}active{% endif %}">Venue</a></li>
+    </ul>
+  </div>
+</nav>
+{% endmacro %}

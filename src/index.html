@@ -1,373 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+{% block navigation %}
+{{ navbar(active='about') }}
+{% endblock %}
 
-  <link rel="stylesheet" href="/css/bootstrap.css">
-  <link rel="stylesheet" href="/css/style.css">
+{% block main %}
 
-  <title>DCCN 2019</title>
-</head>
-<body>
-  <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="images/dccn-logo.png" alt="DCCN Logotype" width="30" height="30">
-        <span class="align-middle">DCCN'19</span>
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav-content">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="main-nav-content">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="#about" class="nav-link">Конференция</a></li>
-          <li class="nav-item"><a href="#dates" class="nav-link">Даты</a></li>
-          <li class="nav-item"><a href="#authors" class="nav-link">Авторам</a></li>
-          <li class="nav-item"><a href="#prices" class="nav-link">Стоимость</a></li>
-          <li class="nav-item"><a href="#committees" class="nav-link">Комитеты</a></li>
-          <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+<!-- Main header section -->
+<div class="container" id="heading">
+  <div class="dark-overlay">
+    <div class="container heading-content">
+      <div class="row align-items-center">
+        <div class="col-lg-9 col-md-8 text-center">
+          <h1><span class="main-subheader">XXII International Conference on</span>
+            <br>
+            <span class="main-header">Distributed Computer and Communication Networks:</span>
+            <br>
+            <span class="main-subheader">Control, Computation, Communications</span>
+          </h1>
+          <h2 class="main-subheader py-5">23-27 September 2019, Moscow, Russia</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 d-none d-md-block">
+          <img src="images/dccn-logo.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About section  -->
+<div class="container px-0">
+
+  <div class="d-flex flex-column flex-lg-row align-items-lg-start">
+
+    <div class="flex-column">
+
+      <div class="dccn-panel">
+        <h3 class="dccn-panel-title">About the Conference</h3>
+        <p class="text-justify">The Russian Academy of Sciences (RAS), the V.A. Trapeznikov Institute of Control Sciences of RAS (ICS RAS, Russia, Moscow), the Peoples’ Friendship University of Russia (RUDN University, Russia, Moscow),the National Research Tomsk State University (NR TSU, Russia, Tomsk), and the Institute of Information and Communication Technologies of Bulgarian Academy of Sciences (Bulgaria, Sofia) jointly organize the 22-th International Conference on</p>
+        <p class="text-center font-weight-normal px-5">DISTRIBUTED COMPUTER AND COMMUNICATION NETWORKS: CONTROL, COMPUTATION, COMMUNICATIONS (DCCN'2019)</p>
+        <p class="text-justify">The purpose of the conference is to unite the efforts of Russian and foreign researchers from various academic and research organizations to develop, exchange and summarize the accumulated experience in the field of theory and practice of building computer and telecommunication networks, discuss development prospects and cooperation in this field.</p>
+        <p class="text-justify">The DCCN 2019 conference will continue a series of conferences on this subject, which have been held in Russia, Bulgaria and Israel in the last 22 years.</p>
+        <p class="text-justify">Accepted papers will be published in a bilingual collection of works (indexed in RSCI) before the conference. Selected papers in English, recommended by the program committee, will be published as a separate volume of extended works by Springer (indexed in Scopus and Web of Science, the final approval pending).</p>
+        <p class="text-justify">By prior agreement, IEEE Region 8 Russia section will be involved in the conference program as technical co-sponsor and provide information support.</p>
+      </div>
+
+      <div class="dccn-panel">
+        <h3 class="dccn-panel-title">Topics of the Conference</h3>
+        <ul class="dccn-topic-list">
+          <li>Computer and communications networking architecture optimization</li>
+          <li>Control in computer and telecommunication systems</li>
+          <li>Performance analysis and QoS/QoE evaluation in wireless networks</li>
+          <li>Analytical modeling and simulation of next-generation communications systems</li>
+          <li>Wireless 4G/5G networks, centimeter- and millimeter-wave radio technologies</li>
+          <li>RFID-technologies and their application in intelligent transportation networks</li>
+          <li>Internet of Things, wearables, and applications of distributed information systems</li>
+          <li>Distributed and cloud computing systems, big data analytics</li>
+          <li>Probabilistic and statistical models in information systems</li>
+          <li>Queuing theory and reliability theory applications</li>
+          <li>High-altitude unmanned telecommunications platforms</li>
         </ul>
       </div>
+
     </div>
-  </nav>
 
-  <section id="heading" class="bg-light text-white">
-    <div class="dark-overlay">
-      <div class="container py-5 my-5">
-        <div class="row align-items-center">
-          <div class="col-lg-9 col-md-8 text-center">
-            <h1><span class="h2 main-subheader">XXII Международная Конференция</span>
-              <br>
-              <span class="display-3 main-header">Распределенные компьютерные и телекоммуникационные сети:</span>
-              <br>
-              <span class="h2 main-subheader">управление, вычисление, связь</span>
-            </h1>
+    <div class="flex-column dccn-side-col">
 
-            <h2 class="main-subheader py-5">23-27 сентября 2019, Москва</h2>
+      <div class="dccn-panel">
+        <h4 class="dccn-panel-title">Important dates</h4>
+        <div class="container">
+          <div class="row align-items-end pr-3">
+            <div class="col-sm-6 col-lg-8">Registration opens:</div>
+            <div class="col-sm-6 col-lg-4 text-sm-right font-weight-normal">01.04.2019</div>
           </div>
-          <div class="col-lg-3 col-md-4 d-none d-md-block">
-            <img src="images/dccn-logo.png" alt="" class="img-fluid">
+          <div class="row align-items-end mt-2 pr-3">
+            <div class="col-sm-6 col-lg-8">Submission deadline:</div>
+            <div class="col-sm-6 col-lg-4 text-sm-right font-weight-normal">18.04.2019</div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="bg-black text-light pt-4">
-    <div class="container text-left py-2">
-      <h2 class="display-4">О конференции</h2>
-    </div>
-  </section>
-
-  <section class="bg-light text-dark">
-    <div class="container p-5">
-      <p>Российская академия наук, Институт проблем управления им. В. А. Трапезникова РАН (ИПУ РАН, Москва, Россия), Российский университет дружбы народов (РУДН, Москва, Россия), Национальный исследовательский Томский государственный университет (НИ ТГУ, Томск, Россия) и Институт информационных и коммуникационных технологий Болгарской Академии наук (Болгария, София) организуют 22-ю международную конференцию</p>
-      <p class="text-center px-4 font-weight-bold lead">РАСПРЕДЕЛЕННЫЕ КОМПЬЮТЕРНЫЕ И ТЕЛЕКОММУНИКАЦИОННЫЕ СЕТИ: УПРАВЛЕНИЕ, ВЫЧИСЛЕНИЕ, СВЯЗЬ (DISTRIBUTED COMPUTER AND COMMUNICATION NETWORKS: CONTROL, COMPUTATION, COMMUNICATIONS)</p>
-      <p>Конференция, поддержанная Российским отделением IEEE Communication Society, объединит исследователей, работающих в различных университетах и исследовательских организациях в области теории и практики построения компьютерных и телекоммуникационных сетей. Будут обсуждены перспективы развития и сотрудничества в этой области. Конференция продолжит серию конференций по этому направлению, которые проходили в России, Болгарии и Израиле в последние 20 лет. Рабочие языки конференции – русский и английский.</p>
-
-      <div class="d-flex justify-content-center flex-wrap align-items-center py-4">
-        <img src="images/ipu-ras-logo.svg" alt="" width="100" height="100" class="mx-4">
-        <img src="images/rudn-logo.svg" alt="" width="100" height="100" class="mx-4">
-        <img src="images/5-100.png" alt="" width="100" height="50" class="mx-4">
-        <img src="images/iict-logo.svg" alt="" width="100" height="100" class="mx-4">
-        <img src="images/tomsk.svg" alt="" width="100" height="100" class="mx-4">
-      </div>
-
-      <p class="pt-4 lead"><strong>Тематика конференции</strong> включает следующие направления:</p>
-      <ul>
-        <li>Оптимизация архитектуры компьютерных и телекоммуникационных сетей;</li>
-        <li>Управление в компьютерных и телекоммуникационных сетях;</li>
-        <li>Оценка производительности и качества обслуживания в беспроводных сетях;</li>
-        <li>Аналитическое и имитационное моделирование коммуникационных систем последующих поколений;</li>
-        <li>Беспроводные сети 4G/5G и технологии сантиметрового и миллиметрового диапазона радиоволн;</li>
-        <li>RFID-технологии и их применение в интеллектуальных транспортных сетях;</li>
-        <li>Интернет вещей, носимые устройства, приложения распределенных информационных систем;</li>
-        <li>Распределенные системы и системы облачного вычисления, анализ больших данных;</li>
-        <li>Вероятностные и статистические модели в информационных системах;</li>
-        <li>Теория массового обслуживания, теория надежности и их приложения;</li>
-        <li>Высотные беспилотные телекоммуникационные платформы.</li>
-      </ul>
-
-      <p class="lead">Скачать предварительную <strong>научную программу конференции</strong> можно по ссылке: <a href="data/DCCN2019_programme.pdf">DCCN2019_programme.pdf</a></p>
-
-    </div>
-  </section>
-
-  <!-- DATES -->
-  <section id="dates" class="bg-light-gray text-dark pt-2">
-    <div class="container text-left my-2 py-2">
-      <h2 class="display-4">Важные даты</h2>
-    </div>
-  </section>
-
-  <section class="bg-white text-dark mb-4 pb-4">
-    <div class="container py-4">
-      <div class="row py-2">
-        <div class="col-xl-10 col-lg-9 col-md-8">
-          <h3 class="h2">10 апреля 2019</h3>
-          <p class="pl-5 lead">окончание приема полнотекстовых докладов (6-8 страниц)</p>
-          <h3 class="h2">10 мая 2019</h3>
-          <p class="pl-5 lead">завершение рецензирования</p>
-          <h3 class="h2">01 июня 2019</h3>
-          <p class="pl-5 lead">окончание приема докладов, доработанных по замечаниям рецензентов, извещение о включении в программу</p>
-        </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 px-0 mx-0">
-          <img src="images/alarm.svg" alt="" class="img-fluid d-none d-md-block">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AUTHORS -->
-  <section id="authors" class="bg-light-gray text-dark pt-2">
-    <div class="container text-left py-2">
-      <h2 class="display-4">Авторам</h2>
-    </div>
-  </section>
-
-  <section class="bg-light text-dark py-4">
-    <div class="container py-4">
-      <div class="row align-items-center">
-        <div class="col-xl-10 col-lg-9 col-md-8 order-2">
-          <p>Принятые работы будут опубликованы в двуязычном сборнике трудов конференции (индексируется в РИНЦ) до начала конференции. Избранные после рецензирования доклады на английском языке, рекомендованные программным комитетом, будут опубликованы в качестве отдельного тома расширенных трудов в издательстве Springer (индексируется в Scopus и Web of Science).</p>
-
-          <p>Статьи должны быть подготовлены в LaTeX в соответствии со следующими шаблонами:</p>
-
-          <ul class="list-unstyled">
-            <li class="my-2"><i class="fas fa-chevron-right pr-2"></i> на русском языке: <a href="/data/latex-template-rus.zip">latex-template-rus.zip</a></li>
-            <li class="my-2"><i class="fas fa-chevron-right pr-2"></i> на английском языке: <a href="/data/latex-template-eng.zip">latex-template-eng.zip</a></li>
-          </ul>
-
-          <p>В случае возникновения вопросов по работе с шаблонами LaTeX, свяжитесь с нами по электронной почте: <a href="mailto:org@dccn.ru">org@dccn.ru</a></p>
-        </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 pl-0 ml-0">
-          <img src="images/box.svg" alt="" class="img-fluid d-none d-md-block pr-0">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICES -->
-  <section id="prices" class="bg-light-gray text-dark pt-2">
-    <div class="container text-left py-2">
-      <h2 class="display-4">Стоимость участия</h2>
-    </div>
-  </section>
-
-  <section class="py-4">
-    <div class="container my-4 py-4">
-      <div class="row justify-content-center">
-        <div class="col-xl-9 col-lg-10 col-12">
-          <div class="card-group">
-
-            <div class="card">
-              <div class="card-header text-header">
-                <h4 class="card-title font-weight-light text-center">3000 &#8381;</h4>
-              </div>
-              <div class="card-body px-2">
-                <div class="d-flex align-items-top">
-                  <i class="far fa-check-circle pr-2 mt-1"></i>
-                  <p>Граждане РФ, не являющиеся студентами</p>
-                </div>
-                <div class="d-flex align-items-top mr-0 pr-0">
-                  <i class="far fa-check-circle pr-2 mt-1"></i>
-                  <p>Студенты и аспиранты, обучающиеся в России, с соавторами</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header">
-                <h4 class="card-title font-weight-light text-center">1500 &#8381;</h4>
-              </div>
-              <div class="card-body px-2">
-                <div class="d-flex align-items-top">
-                  <i class="far fa-check-circle pr-2 mt-1"></i>
-                  <p>Студенты и аспиранты, обучающиеся в России, без соавторов</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header">
-                <h4 class="card-title font-weight-light text-center">200 &euro;</h4>
-              </div>
-              <div class="card-body px-2">
-                <div class="d-flex align-items-top">
-                  <i class="far fa-check-circle pr-2 mt-1"></i>
-                  <p>Международные участники</p>
-                </div>
-              </div>
-            </div>
-
+          <div class="row align-items-end mt-2 pr-3">
+            <div class="col-sm-6 col-lg-8">Notification of acceptance:</div>
+            <div class="col-sm-6 col-lg-4 text-sm-right font-weight-normal">16.05.2019</div>
+          </div>
+          <div class="row align-items-end mt-2 pr-3">
+            <div class="col-sm-6 col-lg-8">Camera-ready (regular proceedings):</div>
+            <div class="col-sm-6 col-lg-4 text-sm-right font-weight-normal">20.06.2019</div>
+          </div>
+          <div class="row align-items-end mt-2 pr-3">
+            <div class="col-sm-6 col-lg-8">Camera-ready (Extended Springer):</div>
+            <div class="col-sm-6 col-lg-4 text-sm-right font-weight-normal">06.06.2019</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- COMMITTEES -->
-  <section id="committees" class="bg-black text-white pt-4">
-    <div class="container py-2 mt-2">
-      <h2 class="display-4">Комитеты</h2>
-    </div>
-  </section>
-
-  <section class="pt-0" id="organizing-committee">
-    <div class="bg-light-gray text-dark">
-      <div class="container py-2">
-        <h3 class="">Организационный комитет</h3>
+      <div class="dccn-panel">
+        <h4 class="dccn-panel-title">Contacts</h4>
+        <p class="">For any questions please write us at <a href="mailto:org@dccn.ru">org@dccn.ru</a></p>
       </div>
-    </div>
 
-    <div class="container py-4">
-      <h4 class="text-center">Сопредседатели:</h4>
-      <div class="row justify-content-center">
-        <div class="col-md-9">
-          <ul class="list-unstyled">
-            <li class="lead my-1">В.М. Вишневский - Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-            <li class="lead my-1">К.Е. Самуйлов - Российский университет дружбы народов (Россия)</li>
-          </ul>
+      <div class="dccn-panel">
+        <div class="dccn-panel-title">
+          Organizers & Sponsors
+        </div>
+        <div class="d-flex justify-content-center flex-wrap align-items-center py-4 dccn-img-row">
+          <img src="images/ipu-ras-logo.svg" alt="" class="img-fluid dccn-img">
+          <img src="images/rudn-logo.svg" alt="" class="img-fluid dccn-img">
+          <img src="images/5-100.png" alt="" class="img-fluid dccn-img">
+          <img src="images/iict-logo.svg" alt="" class="img-fluid dccn-img">
+          <img src="images/tomsk.svg" alt="" class="img-fluid dccn-img">
         </div>
       </div>
     </div>
-
-    <div class="container pt-2 pb-4">
-      <h4 class="text-center">Комитет:</h4>
-      <div class="row justify-content-center">
-        <div class="col-md-6 my-0 py-0">
-          <ul class="my-0 py-0 list-unstyled mx-3">
-            <li class="my-3">Д.В. Козырев - Российский университет дружбы народов, Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-            <li class="my-3">А.А.Ларионов - Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-            <li class="my-3">Р.Е. Иванов - Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-            <li class="my-3">С.Н. Куприяхина - Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-          </ul>
-        </div>
-        <div class="col-md-6 my-0 py-0">
-          <ul class="my-0 py-0 list-unstyled mx-3">
-            <li class="my-3">И.А. Гудкова - Российский университет дружбы народов (Россия)</li>
-            <li class="my-3">В.О. Бегишев - Российский университет дружбы народов (Россия)</li>
-            <li class="my-3">Е.В. Маркова - Российский университет дружбы народов (Россия)</li>
-            <li class="my-3">С.П. Моисеева - Томский государственный университет (Россия)</li>
-            <li class="my-3">Т. Атанасова - Институт информатики и телекоммуникаций Болгарской академии наук (Болгария)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="pt-0" id="program-committee">
-    <div class="bg-light-gray text-dark">
-      <div class="container py-2">
-        <h3 class="">Программный комитет</h3>
-      </div>
-    </div>
-
-    <div class="container py-4">
-      <h4 class="text-center">Сопредседатели:</h4>
-      <div class="row justify-content-center">
-        <div class="col-md-9">
-          <ul class="list-unstyled">
-            <li class="lead my-1">В.М. Вишневский - Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-            <li class="lead my-1">К.Е. Самуйлов - Российский университет дружбы народов (Россия)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container pt-2 pb-4">
-      <h4 class="text-center">Комитет:</h4>
-      <div class="row justify-content-center">
-        <div class="col-md-6 my-0 py-0">
-          <ol class="my-0 py-0 mx-1">
-            <li class="my-1">С.Д. Андреев - Технологический университет Тампере (Финляндия)</li>
-            <li class="my-1">А.М. Андронов - Transport and Telecommunication Institute (Латвия)</li>
-            <li class="my-1">Л.И. Абросимов - Московский энергетический институт (Россия)</li>
-            <li class="my-1">Мо Адда - Университет в Портсмуте (Великобритания)</li>
-            <li class="my-1">А.С. Бугаев - Московский физико-технический институт (Россия)</li>
-            <li class="my-1">С.Н. Васильев - Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-            <li class="my-1">П. Гай - Силезский технологический университет (Польша)</li>
-            <li class="my-1">Ю.В. Гайдамака - Российский университет дружбы народов (Россия)</li>
-            <li class="my-1">Э. Геленбе - Имперский колледж Лондона (Великобритания)</li>
-            <li class="my-1">А. Гельман - IEEE Communications Society (США)</li>
-            <li class="my-1">Д. Грейс - Йоркский университет (Великобритания)</li>
-            <li class="my-1">Дудин А.Н. - Беларусский государственный университет (Беларусь)</li>
-            <li class="my-1">Д. Денг - Государственный университет Changhua (Тайвань)</li>
-            <li class="my-1">А.В. Дворкович - Московский физико-технический институт (Россия)</li>
-            <li class="my-1">В.А. Ефимушкин - Центральный научно-исследовательский институт связи (ЦНИИС) (Россия)</li>
-            <li class="my-1">Ю.П. Зайченко - Киевский политехнический институт (Украина)</li>
-            <li class="my-1">В.Ч. Джошуа - CMS College Kottayam (Индия)</li>
-            <li class="my-1">Н. Колев - Университет Сан-Паулу (Бразилия)</li>
-            <li class="my-1">И. Колодзей - Краковский политехнический институт имени Тадеуша Костюшко (Польша)</li>
-            <li class="my-1">Г. Котсис - Университет именни Иоганна Кеплера (Австрия)</li>
-            <li class="my-1">У. Кригер - Бамбергский университет (Германия)</li>
-            <li class="my-1">А. Кришнамурти - Университет науки и технологий г.Кочин (Индия)</li>
-            <li class="my-1">А.Е. Кучерявый - Санкт-Петербургский государственный университет телекоммуникаций имени профессора М. А. Бонч-Бруевича (Россия)</li>
-            <li class="my-1">Е.А. Кучерявый - Технологический университет Тампере (Финляндия)</li>
-          </ol>
-        </div>
-        <div class="col-md-6 my-0 py-0">
-          <ol class="my-0 py-0 mx-1" start="25">
-            <li class="my-1">Н.А. Кузнецов - Московский физико-технический институт (Россия)</li>
-            <li class="my-1">Л. Лакатош - Будапештский университет (Венгрия)</li>
-            <li class="my-1">Е. Левнер - Технологический институт Холона (Израиль)</li>
-            <li class="my-1">С.Д. Маргенов - Институт информационных и коммуникационных технологий Болгарской академии наук (Болгария)</li>
-            <li class="my-1">А. Меликов - Институт кибернетики национальной академии наук Азербайджана (Азербайджан)</li>
-            <li class="my-1">Г.К. Мишкой - Академия наук Молдавии (Молдавия)</li>
-            <li class="my-1">Е.В. Морозов - Институт прикладных математических исследований КарНЦ РАН (Россия)</li>
-            <li class="my-1">В.А. Наумов - Service Innovation Research Institute (PIKE) (Финляндия)</li>
-            <li class="my-1">А.А. Назаров - Томский государственный университет (Россия)</li>
-            <li class="my-1">И.В. Никифоров - Технологический университет де Труа (Франция)</li>
-            <li class="my-1">П.В. Никитин - Intermec Technologies Corporation (США)</li>
-            <li class="my-1">С.А. Никитов - Институт радиотехники и электроники имени В. А. Котельникова РАН (Россия)</li>
-            <li class="my-1">Д.А. Новиков - Институт проблем управления им. В.А.Трапезникова РАН (Россия)</li>
-            <li class="my-1">М. Пагано - Пизанский университет (Италия)</li>
-            <li class="my-1">Э. Петерсонс - Рижский технический университет (Латвия)</li>
-            <li class="my-1">В.В. Рыков - Российский государственный университет нефти и газа (Россия)</li>
-            <li class="my-1">Л.А. Севастьянов - Российский университет дружбы народов (Россия)</li>
-            <li class="my-1">П. Станчев - Университет Кеттеринга (США)</li>
-            <li class="my-1">С.П. Сущенко - Томский государственный университет (Россия)</li>
-            <li class="my-1">Х. Тимс - Амстердамский свободный университет (Нидерланды)</li>
-            <li class="my-1">С.Р. Чакраварти - Университет Кеттеринга (США)</li>
-            <li class="my-1">Т. Чахорски - Институт информатики Польской академии наук (Польша)</li>
-            <li class="my-1">М.А. Шнепс-Шнеппе - Вентспилсская высшая школа (Латвия)</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="pt-0" id="contacts">
-    <div class="bg-light-gray text-dark">
-      <div class="container py-2">
-        <h3 class="">Контакты</h3>
-      </div>
-    </div>
-
-    <div class="container py-4">
-      <p class="lead">По возникающим вопросам просьба обращаться в <strong>секретариат конференции</strong>: <a href="mailto:org@dccn.ru">org@dccn.ru</a></p>
-    </div>
-
-  </section>
-
-  <footer class="bg-black text-white py-4">
-    <div class="container text-center">
-      <p class="lead">Copyright &copy; <span class="current-year"></span> DCCN</p>
-    </div>
-  </footer>
-
-
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <script src="/scripts/app.min.js"></script>
-</body>
-</html>
+  </div>
+</div>
+{% endblock %}

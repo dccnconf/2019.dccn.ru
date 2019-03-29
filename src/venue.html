@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar('venue') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="dccn-panel pb-5">
+      <h2 class="dccn-panel-title">Venue</h2>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <img src="/images/ipu-photo.png" alt="IPU Photo" class="img-fluid">
+          </div>
+          <div class="col mb-3">
+            <p><span class="font-weight-normal">V.A. Trapeznikov Institute of Control Sciences of Russian Academy of Sciences</span></p>
+            <p>117997 Moscow, Profsoyuznaya str., 65</p>
+            <p><a href="https://goo.gl/maps/j52irTecWu62"><span class="fas fa-globe-asia mr-2"></span>View on Google Maps</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

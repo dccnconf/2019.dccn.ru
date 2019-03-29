@@ -1,7 +1,7 @@
 {
-  "name": "gulp-travis-static-site",
-  "version": "1.0.2",
-  "description": "An example of integrating Gulp, Travis CI for simple Bootstrap-powered site",
+  "name": "2019.dccn.ru",
+  "version": "1.0.0",
+  "description": "Static site for DCCN'2019 Conference",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/larioandr/gulp-travis-static-site.git"
+    "url": "git+https://github.com/dccnconf/2019.dccn.ru.git"
   },
   "author": "Andrey Larionov <larioandr@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/larioandr/gulp-travis-static-site/issues"
+    "url": "https://github.com/dccnconf/2019.dccn.ru/issues"
   },
-  "homepage": "https://github.com/larioandr/gulp-travis-static-site#readme",
+  "homepage": "https://github.com/dccnconf/2019.dccn.ru#readme",
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "browser-sync": "^2.26.3",

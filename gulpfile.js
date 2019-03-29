@@ -108,7 +108,7 @@ function serve() {
 
   gulp.watch(paths.styles.src, buildCss);
   gulp.watch(paths.html.src, buildHtml);
-  gulp.watch(paths.html.templates + '/**/*.html', buildHtml);
+  gulp.watch(paths.html.templates + '/**', buildHtml);
   gulp.watch(paths.scripts.src, buildScripts);
   gulp.watch(paths.images.src + '/**', buildImages);
   gulp.watch(paths.data.src + '/**', copyData);
