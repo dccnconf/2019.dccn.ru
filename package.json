@@ -1,0 +1,42 @@
+{
+  "name": "gulp-travis-static-site",
+  "version": "1.0.2",
+  "description": "An example of integrating Gulp, Travis CI for simple Bootstrap-powered site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larioandr/gulp-travis-static-site.git"
+  },
+  "author": "Andrey Larionov <larioandr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larioandr/gulp-travis-static-site/issues"
+  },
+  "homepage": "https://github.com/larioandr/gulp-travis-static-site#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sftp-up4": "^0.1.8",
+    "gulp-uglify": "^3.0.1",
+    "yargs": "^13.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}

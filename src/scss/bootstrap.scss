@@ -1,0 +1,18 @@
+// $dark: black;
+// $blue: darkblue;
+// $red: pink;
+$black: black;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.bg-none {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-light-gray {
+  background-color: gray("200");
+}
