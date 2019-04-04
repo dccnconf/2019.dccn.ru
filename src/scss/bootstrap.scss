@@ -232,3 +232,27 @@ ul.dccn-topic-list {
     margin-bottom: 5px;
   }
 }
+
+////////////////////////////////////
+//Slider
+.carousel img {
+  width: auto;
+  height: 530px;
+  max-height: 530px;
+
+  @include media-breakpoint-only(md) {
+    height: 420px;
+    max-height: 420px;
+  }
+
+  @include media-breakpoint-only(sm) {
+    height: 380px;
+    max-height: 380px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    height: 280px;
+    max-height: 280px;
+  }
+
+}
