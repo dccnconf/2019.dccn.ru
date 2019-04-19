@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar(active='keynotes') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="dccn-panel">
+      <h1 class="dccn-panel-title mt-3">
+        Scheduling Complex Applications in Cloud Environments – Research Trends and Challenges
+      </h1>
+
+      <div class="dccn-keynote-speaker-focused text-center">
+        <p class="dccn-keynote-speaker-name">Helen Karatza</p>
+        <p class="dccn-keynote-speaker-details">Professor Emeritus</p>
+        <p class="dccn-keynote-speaker-details">Aristotle University of Thessaloniki, Department of Informatics</p>
+        <p class="dccn-keynote-speaker-country mt-2">Greece</p>
+      </div>
+
+      <h2 class="dccn-panel-subtitle mt-5">Abstract</h2>
+
+      <p class="text-justify">For several years now, cloud computing offers virtually unlimited computing resources to consumers, enterprises and researchers as utilities, on a pay-as-you-go basis. In particular cloud computing provides a cost-effective infrastructure to end users for running complex computationally intensive applications.</p>
+
+      <p class="text-justify">With the advent of the cloud computing paradigm many new challenges have appeared which led to changes on traditional computing.  However, there are critical issues that must be addressed, in order to exploit all cloud computing capabilities. This is mainly due to the large scale of the cloud and the continuously increasing number of cloud users and applications deployed in it. Consequently, extensive research has been carried out in cloud computing which spans areas such as resource allocation, scheduling, availability, cost, reliability, quality of service, energy conservation, virtualization. Scheduling algorithms play an important role in cloud computing and must provide a good performance to leasing cost ratio.</p>
+
+      <p class="text-justify">Very important in cloud computing is the effective scheduling of complex real-time applications, considering not only the processing times but also the cost of the energy consumption. Therefore, energy efficient scheduling strategies are required allowing for guarantees that the deadlines of complex applications will be met.</p>
+
+      <p class="text-justify">In this talk we will survey recent advances in cloud computing covering various concepts on complex applications scheduling and we will provide research directions and challenges in the cloud computing area.</p>
+
+
+      <h2 class="dccn-panel-subtitle mt-5">Biography</h2>
+
+      <img src="/images/keynotespeakers/helen_karatza.png" alt="Helen Karatza photo" class="img-fluid rounded mr-3 float-left" style="height: 100%;">
+
+      <p class="text-justify">Helen Karatza is a Professor Emeritus in the Department of Informatics at the Aristotle University of Thessaloniki, Greece, where she teaches courses in the postgraduate and undergraduate level, and supervises doctoral and postdoctoral research. Dr. Karatza's research interests include Computer Systems Modeling and Simulation, Performance Evaluation, Grid, Cloud and Fog Computing, Energy Efficiency in Large Scale Distributed Systems, Resource Allocation and Scheduling and Real-time Distributed Systems.</p>
+
+      <p class="text-justify">Dr. Karatza has authored or co-authored over 220 technical papers and book chapters including five papers that earned best paper awards at international conferences. She is senior member of IEEE, ACM and SCS, and she served as an elected member of the Board of Directors at Large of the Society for Modeling and Simulation International. She served as Chair and Keynote Speaker in International Conferences.</p>
+
+      <p class="text-justify">Dr. Karatza is the Editor-in-Chief of the Elsevier Journal “Simulation Modeling Practice and Theory” and Senior Associate Editor of the “Journal of Systems and Software” of Elsevier. She was Editor-in-Chief of “Simulation Transactions of The Society for Modeling and Simulation International” and Associate Editor of “ACM Transactions on Modeling and Computer Simulation”. She served as Guest Editor of Special Issues in International Journals. More info about her activities/publications can be found in <a href="http://agent.csd.auth.gr/~karatza/">http://agent.csd.auth.gr/~karatza/</a></p>
+
+    </div>
+
+      <!-- <div class="dccn-panel card card-body dccn-keynote-card">
+        <div class="d-flex flex-column">
+          <div class="d-flex flex-row align-items-top">
+          </div>
+          <p class="mt-2 mb-0">
+            <a href="#">Read More...</a>
+          </p>
+        </div>
+      </div> -->
+
+    <div class="dccn-panel">
+      <p class="text-center my-1">
+        <a href="/keynotes.html" class="dccn-link"><i class="fas fa-chevron-left"></i> Back to all keynotes</a>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}
