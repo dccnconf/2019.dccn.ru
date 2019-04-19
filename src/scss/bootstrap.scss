@@ -212,6 +212,7 @@ body {
 
 .dccn-keynote-card {
   padding: 7px 10px;
+  min-width: 300px;
 }
 
 .dccn-keynote-speaker {
@@ -288,4 +289,38 @@ ul.dccn-topic-list {
     max-height: 280px;
   }
 
+}
+
+
+/////////////////////////////////////////////////
+// Keynotes
+#keynoteHeading {
+  position: relative;
+  height: 200px;
+  background: url('../images/keynotes_background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  color: white;
+  // background-position: 0 -450px;
+
+  @include media-breakpoint-up(xl) {
+    background-position: 0 -280px;
+  }
+
+  @include media-breakpoint-only(lg) {
+    background-position: 0 -150px;
+  }
+
+  @include media-breakpoint-only(md) {
+    background-position: 0 -150px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    background-position: 0 0;
+  }
+
+  .dccn-panel-title {
+    padding: 50px 30px 30px 30px;
+  }
 }
