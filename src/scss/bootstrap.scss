@@ -203,6 +203,39 @@ body {
 .lead {
   font-weight: 300;
 }
+.dccn-keynote-title {
+  font-weight: 300;
+  text-align: left;
+  font-size: 1.4rem;
+  margin-top: 25px;
+}
+
+.dccn-keynote-card {
+  padding: 7px 10px;
+}
+
+.dccn-keynote-speaker {
+  margin-left: 10px;
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+  }
+  .dccn-keynote-speaker-name {
+    font-weight: 500;
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .dccn-keynote-speaker-details {
+    font-weight: 200;
+    font-size: 0.8rem;
+  }
+  .dccn-keynote-speaker-country {
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+}
 
 
 ///////////////////////////////////////

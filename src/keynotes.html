@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar(active='keynotes') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="dccn-panel">
+      <h3 class="dccn-panel-title">Keynotes</h3>
+    </div>
+
+    <div class="card-columns">
+      <div class="dccn-panel card card-body dccn-keynote-card">
+        <div class="d-flex flex-column">
+          <div class="d-flex flex-row align-items-top">
+            <img src="images/keynotespeakers/helen_karatza.png" alt="Helen Karatza photo" class="img-fluid rounded mr-2" style="height: 100%;">
+            <div class="dccn-keynote-speaker">
+              <p class="dccn-keynote-speaker-name">Helen Karatza</p>
+              <p class="dccn-keynote-speaker-details">Professor Emeritus</p>
+              <p class="dccn-keynote-speaker-details">Aristotle University of Thessaloniki, Department of Informatics</p>
+              <p class="dccn-keynote-speaker-country mt-2">Greece</p>
+            </div>
+          </div>
+          <h4 class="dccn-keynote-title">
+            Scheduling Complex Applications in Cloud Environments – Research Trends and Challenges
+          </h4>
+          <p class="mt-2 mb-0">
+            <a href="#">Read More...</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="dccn-panel card card-body dccn-keynote-card bg-dark text-light">
+        <p class="my-2 text-center font-italic">Other keynotes will be announced later</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
