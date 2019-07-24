@@ -124,9 +124,8 @@ function deploy(cb) {
   return gulp.src('dist/**')
     .pipe(ftp({
       host: argv.host,
-      user: argv.user,
-      pass: argv.pass,
-      remotePath: argv.path
+      remotePath: argv.path,
+      auth: "selcdn"
     }));
 }
 
