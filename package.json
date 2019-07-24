@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/dccnconf/2019.dccn.ru#readme",
   "devDependencies": {
+<<<<<<< HEAD
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
+=======
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.5",
+>>>>>>> f49485bc96ef6dff7e3ceb0276f1d12e97bc8067
     "cssnano": "^4.1.10",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
@@ -37,6 +42,10 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+<<<<<<< HEAD
     "popper.js": "^1.15.0"
+=======
+    "popper.js": "^1.14.7"
+>>>>>>> f49485bc96ef6dff7e3ceb0276f1d12e97bc8067
   }
 }

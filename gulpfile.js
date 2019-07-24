@@ -123,8 +123,8 @@ function clean(cb) {
 function deploy(cb) {
   return gulp.src('dist/**')
     .pipe(ftp({
-      host: argv.host,
-      remotePath: argv.path,
+      host: "sftp.selcdn.ru",
+      remotePath: '2019.dccn.ru/',
       auth: "selcdn"
     }));
 }
