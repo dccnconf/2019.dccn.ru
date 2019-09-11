@@ -1,0 +1,253 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar('registration') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="dccn-panel">
+      <h3 class="dccn-panel-title">Registration</h3>
+      <p>Papers should be submitted via registration system at <a href="https://dccn.ru">https://dccn.ru</a> (opens at <span class="font-weight-normal">1 April 2019</span>).</p>
+      <p>Please note that <span class="font-weight-normal text-primary">all co-authors must be registered</span> and added as co-authors inside the registration system in order to submit the paper.</p>
+    </div>
+
+    <div class="dccn-panel">
+      <h3 class="dccn-panel-title">Fees</h3>
+
+      <div class="container dccn-table">
+        <div class="row">
+          <div class="col-9 col-md-10 col-lg-8 col-xl-6">
+            <p>Russian citizens, students of Russian universities <span class="font-weight-normal">with co-authors</span>:</p>
+          </div>
+          <div class="col-3 col-md-2 col-lg-4 col-xl-6">
+            <p>3000 &#8381;</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9 col-md-10 col-lg-8 col-xl-6">
+            <p>Students of Russian universities <span class="font-weight-normal">without co-authors</span>:</p>
+          </div>
+          <div class="col-3 col-md-2 col-lg-4 col-xl-6">
+            <p>1500 &#8381;</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9 col-md-10 col-lg-8 col-xl-6">
+            <p>International participants:</p>
+          </div>
+          <div class="col-3 col-md-2 col-lg-4 col-xl-6">
+            <p>200 &euro;</p>
+          </div>
+        </div>
+      </div>
+
+      <p><span class="lead">Discounts: </span> all IEEE members receive a 15% registration fee reduction.</p>
+    </div>
+
+    <div class="dccn-panel">
+      <h3 class="dccn-panel-title">Payment Information</h3>
+      
+      <h4 class="dccn-panel-subtitle">Agreement (public offer) to participate in DCCN-2019</h4>
+      <p>
+        Dear colleagues! To participate in the XXII International Conference on “Distributed Computer and Communication Networks: Control, Computation, Communications” one has to accept the public offer. The public offer is available for download through the following link:
+      </p>
+      <p>
+        <a href="data/DCCN2019_PUBLIC_OFFER.PDF">
+          <i class="far fa-file-pdf"></i> DCCN2019_PUBLIC_OFFER.PDF
+        </a>
+      </p>
+      <p>
+        Acceptance of the Offer is carried out by paying the registration fee in the order covered by Section 3 of the Agreement, and sending a confirmation of payment to the following email address: <a href="mailto:org@dccn.ru">org@dccn.ru</a>.
+      </p>
+
+      <h4 class="dccn-panel-subtitle">Payment details</h4>
+      <!-- RUSSIAN RUBLES:-->
+      <h5 class="font-weight-light mt-4 mb-3">Payment details for funds transfer in <span class="border-bottom">Russian rubles</span>:</h5>
+      <div class="container pl-4 dccn-table">
+
+        <div class="row">
+          <div class="col-12 dccn-table-left">
+            <p>Federal State Autonomic Educational Institution of Higher Education «RUDN University»</p>
+          </div>
+        </div>    
+
+        <div class="row">
+          <div class="col-12 col-md-9 col-lg-8 col-xl-6 dccn-table-left">
+            <p>Address:</p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-4 col-xl-6 dccn-table-right">
+            <p>Miklukho-Maklaya Str. 6, 117198 Moscow</p>
+          </div>
+        </div>    
+
+        <div class="row">
+          <div class="col-12 col-md-9 col-lg-8 col-xl-6 dccn-table-left">
+            <p>ОКВЭД (All-Russian Classifier of Types of Economic Activity):</p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-4 col-xl-6 dccn-table-right">
+            <p>85.22</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-9 col-lg-8 col-xl-6 dccn-table-left">
+            <p>ОКПО (All-Russian Classifier of Enterprises and Organizations):</p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-4 col-xl-6 dccn-table-right">
+            <p>02066463</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-6 dccn-table-left">
+            <p>ОКАТО:</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-6 dccn-table-right">
+            <p>45293578000</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-6 dccn-table-left">
+            <p>ИНН (Individual Taxpayer Number):</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-6 dccn-table-right">
+            <p>7728073720</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-6 dccn-table-left">
+            <p>КПП (Industrial Enterprises Classifier):</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-6 dccn-table-right">
+            <p>772801001</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-6 dccn-table-left">
+            <p>ОГРН (Primary State Registration Number):</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-6 dccn-table-right">
+            <p>1027739189323</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-6 dccn-table-left">
+            <p>Bank account number:</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-6 dccn-table-right">
+            <p>40503810900054000001</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-6 dccn-table-left">
+            <p>БИК (Bank Identification Code):</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-6 dccn-table-right">
+            <p>044525187</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-6 dccn-table-left">
+            <p>К/с (Correspondent account) №:</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-6 dccn-table-right">
+            <p>30101810700000000187</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Payment in EURO: -->
+      <h5 class="font-weight-light mt-4 mb-3">Payment details for funds transfer in <span class="border-bottom">EURO</span>:</h5>
+      <div class="container pl-4 dccn-table">
+
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5 col-xl-6">
+            <p>BANK NAME:</p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <p>Sberbank (Head office – all branches and offices in Russia) Moscow</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5 col-xl-6">
+            <p>SWIFT:</p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <p>SABRRUMM</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5 col-xl-6">
+            <p>BENEFICIARY ACCOUNT:</p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <p>40503978638110200323</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5 col-xl-6">
+            <p>BENEFICIARY:</p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <p>People’s Friendship University of Russia</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5 col-xl-6">
+            <p>ADDRESS:</p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <p>Miklukho-Maklay Str. 6, 117198 Moscow, Russia</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5 col-xl-6">
+            <p>CORRESPONDENT ACCOUNT:</p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <p>No.10094987261000; Deutsche Bank AG, Frankfurt am Main (SWIFT – DEUTDEFF)</p>
+          </div>
+        </div>
+  
+      </div>
+
+      <!-- Additional notes after table:-->
+      <div class="dccn-important-note">
+        <p class="dccn-important-heading">IMPORTANT</p>
+        <p>
+          The payment reference shall be <span class="border-bottom border-secondary">necessarily specified</span>:
+        </p>
+        <blockquote class="ml-5 blockquote">
+          <cite>
+            «<b>First Name</b> and <b>Last Name of the participant</b>. Payment under the Agreement on Public Offer No. 3319230010039 dd. «02» 09 2019. Code 0211903».
+          </cite>
+        </blockquote>
+        <p>Otherwise we will not be able to identify the payer.
+        </p>
+      </div>
+
+      <p class="mt-4">
+        <span class="lead">Note:</span> Payment of the registration fee can also be made upon registration.
+      </p>
+  
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -261,6 +261,32 @@ body {
   }
 }
 
+.dccn-table {
+  margin-bottom: 20px;
+
+  .row > div > p {
+    margin: 2px 0;
+  }
+  .row {
+    border-bottom: 1px dashed $secondary;
+  }
+}
+
+.dccn-important-note {
+  .dccn-important-heading {
+    // display: inline-block;
+    margin-top: -15px;
+    margin-left: 5px;
+    padding-left: 10px;
+    background: white;
+    width: 110px;
+    color: theme-color-level(danger, -5);
+    font-weight: 500;
+  }
+
+  border: 1px solid theme-color-level(danger, -5);
+  padding: 5px 20px;
+}
 
 ///////////////////////////////////////
 // Images
