@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar(active='keynotes') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="dccn-panel">
+      <h1 class="dccn-panel-title mt-3">
+        Robust and Autonomous mmWave-based Drone Interworking and Aerial Networking Technology
+      </h1>
+
+      <div class="dccn-keynote-speaker-focused text-center">
+        <p class="dccn-keynote-speaker-name">Sergey Andreev</p>
+        <p class="dccn-keynote-speaker-details">Assistant professor, Academy Research Fellow</p>
+        <p class="dccn-keynote-speaker-details">Tampere University</p>
+        <p class="dccn-keynote-speaker-country mt-2">Finland</p>
+      </div>
+
+      <h2 class="dccn-panel-subtitle mt-5">Abstract</h2>
+
+      <p class="text-justify">The global research on fifth-generation (5G) wireless broadband has essentially been completed with the ratification of the 5G New Radio (NR) technology that employs higher (millimeter-wave, mmWave) carrier frequencies. However, provisioning for consistent network coverage and capacity on the ground remains difficult, while doing so in true 3D space is even more challenging. This talk puts forward a novel vision where integrated terrestrial and non-terrestrial network deployments utilize cooperative swarms of unmanned aerial vehicles (UAVs) or drones to provide ubiquitous coverage and deliver on-demand capacity to stringent wireless applications. Along these lines, we specifically focus on the emerging 5G mmWave cellular capabilities when addressing these air-to-everything (A2X) systems.</p>
+
+      <h2 class="dccn-panel-subtitle mt-5">Biography</h2>
+
+      <img src="/images/keynotespeakers/sergey_andreev.png" alt="Sergey Andreev photo" class="img-fluid rounded mr-3 float-left" style="height: 100%; max-height: 120px;">
+
+      <p class="text-justify">Sergey Andreev (<a href="mailto:sergey.andreev@tuni.fi">sergey.andreev@tuni.fi</a>) is an assistant professor of communications engineering and Academy Research Fellow at Tampere University, Finland. Since 2018, he has also been a Visiting Senior Research Fellow with the Centre for Telecommunications Research, King's College London, UK. He received his Ph.D. (2012) from TUT as well as his Specialist (2006) and Cand.Sc. (2009) degrees from SUAI. He serves as editor for IEEE Wireless Communications Letters (2016-) and as series editor of the IoT Series (2018-) for IEEE Communications Magazine. He (co-)authored more than 200 published research works on intelligent IoT, mobile communications, and heterogeneous networking.</p>
+
+    </div>
+
+      <!-- <div class="dccn-panel card card-body dccn-keynote-card">
+        <div class="d-flex flex-column">
+          <div class="d-flex flex-row align-items-top">
+          </div>
+          <p class="mt-2 mb-0">
+            <a href="#">Read More...</a>
+          </p>
+        </div>
+      </div> -->
+
+    <div class="dccn-panel">
+      <p class="text-center my-1">
+        <a href="/keynotes.html" class="dccn-link"><i class="fas fa-chevron-left"></i> Back to all keynotes</a>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}
