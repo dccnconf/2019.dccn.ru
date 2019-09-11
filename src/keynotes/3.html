@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar(active='keynotes') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="dccn-panel">
+      <h1 class="dccn-panel-title mt-3">
+        Methods for processing of Heterogeneous Data in IoT based Systems
+      </h1>
+
+      <div class="dccn-keynote-speaker-focused text-center">
+        <p class="dccn-keynote-speaker-name">Tatiana Atanasova</p>
+        <p class="dccn-keynote-speaker-details">Associate Professor</p>
+        <p class="dccn-keynote-speaker-details">Institute of Information and Communication Technologies - Bulgarian Academy of Sciences, Department of Modelling and Optimization</p>
+        <p class="dccn-keynote-speaker-country mt-2">Bulgaria</p>
+      </div>
+
+      <h2 class="dccn-panel-subtitle mt-5">Abstract</h2>
+
+      <p class="text-justify">The concept of the Internet of Things (IoT) is based on the idea of a permanent connection between the physical and digital world, which is now technologically feasible. The IoT can describe a scenario in which a large number of objects have built-in uniquely identifiable computing devices connected to the Internet that allow them to collect, store, share and analyze data and to be managed remotely via other devices with an Internet connection. It is important to provide the adequate processing of the data to see what is behind it and to assess the situation. The lack of Reference Modelling IoT Architecture prevents a common approach to processing the generated data. The need to retrieve and analyze this data from the IоТ complex systems in real-time requires applying of wide scope of methods and tools. This talk will discuss different approaches to process the data from various sources according to different goals: sensing, data analytics, and machine learning with hope that using of IoT will improve all aspects of life.</p>
+
+      <h2 class="dccn-panel-subtitle mt-5">Biography</h2>
+
+      <img src="/images/keynotespeakers/tatiana_atanasova.png" alt="Tatiana Atanasova photo" class="img-fluid rounded mr-3 float-left" style="height: 100%; max-height: 120px;">
+
+      <p class="text-justify">Tatiana Atanasova is an Associate Professor at the Department of Modelling and Optimization at the Institute of Information and Communication Technologies – Bulgarian Academy of Sciences. Her research interests lie at the cross-section of information society technologies, knowledge-based systems and complex control systems. She published her works in a wide range of international conferences and participated in several projects funded by European Commission's 4th and 6th Framework Programmes, Bulgarian, Russian and Finnish Academies of Sciences. She supervises doctoral research of 4 PhD students. She is a member of editorial board in International Journal of Distributed Systems and Technologies (IJDST) as Associate Editor. More info about her publications and activities can be found in <a href="http://iinf.bas.bg/en/atanasova.htm">http://iinf.bas.bg/en/atanasova.htm</a>. </p>
+
+    </div>
+
+      <!-- <div class="dccn-panel card card-body dccn-keynote-card">
+        <div class="d-flex flex-column">
+          <div class="d-flex flex-row align-items-top">
+          </div>
+          <p class="mt-2 mb-0">
+            <a href="#">Read More...</a>
+          </p>
+        </div>
+      </div> -->
+
+    <div class="dccn-panel">
+      <p class="text-center my-1">
+        <a href="/keynotes.html" class="dccn-link"><i class="fas fa-chevron-left"></i> Back to all keynotes</a>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}
