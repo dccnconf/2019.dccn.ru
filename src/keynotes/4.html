@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar(active='keynotes') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="dccn-panel">
+      <h1 class="dccn-panel-title mt-3">
+        Practical Overview of Communication Technologies for Industrial IoT Applications
+      </h1>
+
+      <div class="dccn-keynote-speaker-focused text-center">
+        <p class="dccn-keynote-speaker-name">Jiri Hosek</p>
+        <p class="dccn-keynote-speaker-details">Associate Professor and Deputy Vice-Head for R&D and International Relations</p>
+        <p class="dccn-keynote-speaker-details">Department of Telecommunications, Brno University of Technology</p>
+        <p class="dccn-keynote-speaker-country mt-2">Czech Republic</p>
+      </div>
+
+      <h2 class="dccn-panel-subtitle mt-5">Abstract</h2>
+
+      <p class="text-justify">Today, about 6.5 billion “things” are connected to the Internet. And while this sounds like a lot, still less than 1% of all the things, that are around us and could be connected, are really utilizing this opportunity. Hence, the question is why all these devices are not equipped with wireless connectivity? In some cases, they are either too remote, too inaccessible, or there is simply too many of them to make it economically viable. To mitigate this gap, promising communication technologies emerge, which have the potential to become enablers for true mass IoT market. In this talk, we provide a practical perspective on dominant Low-Power Wide-Area (LPWA) network technologies, while challenging them to fulfill the key requirements of (critical) industrial IoT applications. Later, we will focus primarily on the 3GPP Narrowband IoT (NB-IoT) technology supporting low data rate massive connections, enhanced coverage, reduced cost and complexity, ultra-low power consumption, and flexible delay characteristics. Moreover, we will reveal our prototype design of the NB-IoT device and outline the architecture challenges as well as the configuration required on the side of a mobile operator to have NB-IoT communication ready to take off. Finally, we summarize the NB-IoT radio coverage as well energy efficiency results obtained during the extensive measurement campaigns undertaken within the long-term cooperation with our industrial partners.</p>
+
+      <h2 class="dccn-panel-subtitle mt-5">Biography</h2>
+
+      <img src="/images/keynotespeakers/jiri_hosek.jpg" alt="Jiri Hosek photo" class="img-fluid rounded mr-3 float-left" style="height: 100%; max-height: 120px;">
+
+      <p class="text-justify">Dr. Jiri Hosek is an Associate Professor and Deputy Vice-Head for R&D and International Relations at Department of Telecommunications, Brno University of Technology, Czech Republic. Jiri is also coordinating the WISLAB research group (<a href="http://wislab.cz">http://wislab.cz</a>), where he deals mostly with industry-oriented R&D projects in the area of future mobile networks, Internet of Things and home automation services. Jiri (co-) authored more than 80 research works on networking technologies, wireless communications, quality of service, quality of experience and IoT applications including those published in the IEEE Communications Magazine. Jiri is an experienced speaker regularly participating and actively presenting his research work on premier international conferences and workshops.</p>
+
+    </div>
+
+      <!-- <div class="dccn-panel card card-body dccn-keynote-card">
+        <div class="d-flex flex-column">
+          <div class="d-flex flex-row align-items-top">
+          </div>
+          <p class="mt-2 mb-0">
+            <a href="#">Read More...</a>
+          </p>
+        </div>
+      </div> -->
+
+    <div class="dccn-panel">
+      <p class="text-center my-1">
+        <a href="/keynotes2.html" class="dccn-link"><i class="fas fa-chevron-left"></i> Back to all keynotes</a>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}

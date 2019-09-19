@@ -354,7 +354,8 @@ ul.dccn-topic-list {
   // background-position: 0 -450px;
 
   @include media-breakpoint-up(xl) {
-    background-position: 0 -280px;
+    background-position: 0 -370px;
+    background-size: cover;
   }
 
   @include media-breakpoint-only(lg) {
