@@ -200,8 +200,24 @@ body {
   margin: 10px 10px 20px 10px;
   color: $dark;
 }
+.dccn-panel-subsubtitle {
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  margin: 5px 10px 20px 10px;
+  color: $dark;
+}
 .lead {
   font-weight: 300;
+}
+.dccn-text-small {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+.dccn-text-small-light {
+  font-weight: light;
+  font-size: 0.9rem;
 }
 .dccn-keynote-title {
   font-weight: 300;
@@ -269,6 +285,13 @@ body {
   }
   .row {
     border-bottom: 1px dashed $secondary;
+  }
+}
+
+.border-bottom-md-none {
+  border-bottom: 1px solid $border-color;
+  @include media-breakpoint-up(md) {
+    border: none;
   }
 }
 
@@ -373,4 +396,9 @@ ul.dccn-topic-list {
   .dccn-panel-title {
     padding: 50px 30px 30px 30px;
   }
+}
+
+.dccn-talk-id {
+  font-weight: normal !important;
+  font-size: 0.8rem;
 }

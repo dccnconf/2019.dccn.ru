@@ -1,0 +1,1654 @@
+{% extends 'base.html' %}
+{% from 'navigation.njk' import navbar %}
+
+{% block navigation %}
+{{ navbar(active='program') }}
+{% endblock %}
+
+{% block main %}
+<div class="container px-0">
+  <div class="flex-column">
+
+    <div class="container">
+      <div class="dccn-panel">
+        <h3 class="dccn-panel-title">Conference Program</h3>
+
+        <p class="text-justify">
+          Download program in PDF: <a href="data/DCCN2019_PROGRAM.pdf"><i class="far fa-file-pdf"></i> DCCN2019_PROGRAM.pdf</a>
+        </p>
+
+        <!-- VENUES -->
+        <h4 class="font-weight-normal mt-4">
+          Venues
+        </h4>
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              September 23 (Monday) – September 24 (Tuesday), 2019
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="font-weight-bold">ICS RAS</span>  (65 Profsoyuznaya street, Moscow 117997, Russia)
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-md-6">
+              September 25 (Wednesday) – September 27 (Friday), 2019
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="font-weight-bold">RUDN, Faculty of Science</span>  (Ordzhonikidze str. 3, 115419 Moscow, Russia)
+            </div>
+          </div>
+        </div>
+
+        <!-- TRACKS -->
+        <h4 class="font-weight-normal mt-4">Tracks</h4>
+        <ul class="list-unstyled">
+          <ol class="pl-0">
+            <a href="#plenarySession">
+              <span class="font-weight-bold">Registration, Plenary session &amp; Social Events</span>
+            </a>
+          </ol>
+          <ol class="pl-0">
+            <a href="#trackA">
+              <span class="font-weight-bold">Track A. Computer and Communication Networks and Technologies</span>
+              <span>(Chair: Vladimir Vishnevsky. Co-chair: Dmitry Kozyrev)</span>
+            </a>
+          </ol>
+          <ol class="pl-0">
+            <a href="#trackB">
+              <span class="font-weight-bold">Track B. Analytical Modeling of Distributed Systems</span>
+              <span>(Chair: Konstantin Samouylov. Co-chair: Irina Gudkova)</span>
+            </a>
+          </ol>
+          <ol class="pl-0">
+            <a href="#trackC">
+              <span class="font-weight-bold">Track C. Distributed Systems Applications</span>
+              <span>(Chair: Andrey Koucheryavy. Co-chair: Daria Ostrikova)</span>
+            </a>
+          </ol>
+        </ul>
+      </div>
+
+
+
+
+      <!---------------------------------------------------------------------->
+      <!-- PROGRAM AT A GLANCE                                              -->
+      <!---------------------------------------------------------------------->
+      <div class="dccn-panel">
+        <h4 class="dccn-panel-subtitle">Program at a Glance</h4>
+
+        <p class="dccn-panel-subsubtitle mt-4 mb-1">23 September 2019 (Monday)</p>
+        <p class="mt-0 mb-3 pl-2 dccn-text-small"><span class="font-weight-bold">Venue:</span> ICS RAS</p>
+        <div class="container">
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">09:00 - 17:30</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Reception desk</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Registration opens</div>
+          </div>
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">10:30 - 14:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Small conference hall</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#plenarySession">Plenary session</a></div>
+          </div>
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">14:00 - 14:15</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Small conference hall</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Group photo</div>  
+          </div>
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">14:15 - 15:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small"></div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Lunch time</div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:00 - 17:45</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 9</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#A11">Track A: session A.1.1</a></div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:00 - 17:45</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 10</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#B11">Track B: session B.1.1</a></div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:00 - 17:45</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 4</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#C11">Track C: session C.1.1</a></div>
+          </div>        
+        </div>
+
+        <p class="dccn-panel-subsubtitle mt-5 mb-1">24 September 2019 (Tuesday)</p>
+        <p class="mt-0 mb-2 pl-2 dccn-text-small"><span class="font-weight-bold">Venue:</span> ICS RAS</p>
+        <div class="container">
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal">09:00 - 17:30</div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Reception desk</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Registration and welcome tea</div>
+          </div>
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">10:00 - 14:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 9</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#A21">Track A: session A.2.1</a></div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">10:00 - 14:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 10</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#B21">Track B: session B.2.1</a></div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">10:00 - 14:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 4</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#C21">Track C: session C.2.1</a></div>
+          </div>          
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">14:00 - 15:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small"></div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Lunch time</div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:00 - 18:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 9</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#A22">Track A: session A.2.2</a></div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:00 - 17:30</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 10</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#B22">Track B: session B.2.2</a></div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:00 - 17:45</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 4</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#C22">Track C: session C.2.2</a></div>
+          </div>        
+        </div>
+
+        <p class="dccn-panel-subsubtitle mt-5 mb-1">25 September 2019 (Wednesday)</p>
+        <p class="mt-0 mb-2 pl-2 dccn-text-small"><span class="font-weight-bold">Venue:</span> RUDN, Faculty of Sciences</p>
+        <div class="container">
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal">09:00 - 14:00</div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 117</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Registration and welcome tea</div>
+          </div>
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">10:00 - 14:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 219</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#C31">Track C: session C.3.1</a></div>
+          </div>          
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">14:00 - 15:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 font-italic"></div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Lunch time</div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:30 - 18:30</span></div>
+            <div class="col-12 col-md-4 col-lg-3 font-italic"></div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Guided city bus tour</div>
+          </div>        
+        </div>
+
+        <p class="dccn-panel-subsubtitle mt-5 mb-1">26 September 2019 (Thursday)</p>
+        <p class="mt-0 mb-2 pl-2 dccn-text-small"><span class="font-weight-bold">Venue:</span> RUDN, Faculty of Sciences</p>
+        <div class="container">
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal">10:00 - 15:30</div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 117</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Registration and welcome tea</div>
+          </div>
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">10:00 - 12:30</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 329</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#A41">Track A: session A.4.1</a></div>
+          </div>          
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">10:00 - 13:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 219</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#B41">Track B: session B.4.1</a></div>
+          </div>          
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">13:00 - 14:00</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small"></div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Lunch time</div>
+          </div>  
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">14:00 - 17:30</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">Room 219</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold"><a href="#B42">Track B: session B.4.2</a></div>
+          </div>          
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">15:30 - 18:30</span></div>
+            <div class="col-12 col-md-4 col-lg-3 dccn-text-small">RUDN dining hall</div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Conference dinner</div>
+          </div>        
+        </div>
+
+        <p class="dccn-panel-subsubtitle mt-5 mb-1">27 September 2019 (Friday)</p>
+        <p class="mt-0 mb-2 pl-2 dccn-text-small"><span class="font-weight-bold">Venue:</span> RUDN, Faculty of Sciences</p>
+        <div class="container">
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal">10:00 - 12:00</div>
+            <div class="col-12 col-md-4 col-lg-3 font-italic"></div>
+            <div class="col-12 col-md-5 col-lg-7">
+              <p class="my-0 py-0 font-weight-bold">Round Table: On applications of the distributed systems<br>(Круглый стол по вопросам приложений распределённых систем)</p>
+              <p class="my-0 dccn-text-small">Chairs: prof. Vladimir Vishnevsky, prof. Konstantin Samouylov</p>
+            </div>
+          </div>
+          <div class="row mb-3 mb-md-1">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal"><span class="border-bottom-md-none">12:00 - 12:15</span></div>
+            <div class="col-12 col-md-4 col-lg-3 font-italic"></div>
+            <div class="col-12 col-md-5 col-lg-7 font-weight-bold">Conference closing</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!---------------------------------------------------------------------->
+      <!-- PLENARY SESSION                                                  -->
+      <!---------------------------------------------------------------------->
+      <div class="dccn-panel" id="plenarySession">
+        <h4 class="dccn-panel-subtitle">Plenary session</h4>
+        <p class="dccn-panel-subsubtitle">23 September 2019 (Monday)</p>
+        <p class="my-0"><span class="font-weight-bold">Room:</span> ICS RAS, small conference hall</p>
+        <p class="my-0">
+          <span class="font-weight-bold">Chairmen:</span>
+          <span class="font-weight-normal">Vladimir Vishnevsky</span> (ICS RAS) and
+          <span class="font-weight-normal">Konstantin Samouylov</span> (RUDN)
+        </p>
+
+        <div class="container mt-3">
+          <div class="row mb-3">
+            <div class="col-12 col-md-3 col-lg-2 mt-1 font-weight-normal">10:30 - 10:45</div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <p class="lead font-weight-bold my-0">Welcome Speech</p>
+              <p class="my-0">
+                <span class="font-weight-normal">Dmitry Novikov</span> (Director, ICS RAS) and
+                <span class="font-weight-normal">Vladimir Filippov</span> (Rector, RUDN)
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-3 col-lg-2 mt-1 font-weight-normal">10:45 - 11:30</div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <p class="lead font-weight-bold my-0">
+                <a href="/keynotes/1.html">Scheduling Complex Applications in Cloud Environments – Research Trends and Challenges</a>
+              </p>
+              <p class="my-0">
+                <span class="font-weight-normal">Helen Karatza</span> (Aristotle University of Thessaloniki, Greece)
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-3 col-lg-2 mt-1 font-weight-normal">11:30 - 12:15</div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <p class="lead font-weight-bold my-0">
+                <a href="/keynotes/4.html">Practical Overview of Communication Technologies for Industrial IoT Applications</a>
+              </p>
+              <p class="my-0">
+                <span class="font-weight-normal">Jiří Hošek</span> (Brno University of Technology, Czech Republic)
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal">12:15 - 12:30</div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <p class="my-0"><i class="fas fa-coffee"></i> Coffee Break</p>
+            </div>
+          </div>
+  
+          <div class="row mb-3">
+            <div class="col-12 col-md-3 col-lg-2 mt-1 font-weight-normal">12:30 - 13:15</div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <p class="lead font-weight-bold my-0">
+                <a href="/keynotes/2.html">Robust and Autonomous mmWave-based Drone Interworking and Aerial Networking Technology</a>
+              </p>
+              <p class="my-0">
+                <span class="font-weight-normal">Sergey Andreev</span> (Tampere University of Technology, Finland)
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-3 col-lg-2 mt-1 font-weight-normal">13:15 - 14:00</div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <p class="lead font-weight-bold my-0">
+                <a href="/keynotes/3.html">Methods for processing of Heterogeneous Data in IoT based Systems</a>
+              </p>
+              <p class="my-0">
+                <span class="font-weight-normal">Tatiana Atanasova</span> (Institute of Information and Communication Technologies, BAS, Bulgaria)
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-3 col-lg-2 font-weight-normal">14:00 - 14:15</div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <p class="font-italic my-0">GROUP PHOTO</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="row">
+          <!----------------------------------------------------------------------
+            TRACK A
+          ------------------------------------------------------------------------>
+          <div class="col-12 col-lg-4 px-0">
+            <div class="dccn-panel mr-lg-1" id="trackA">
+              <h4 class="dccn-panel-subtitle"><span class="font-weight-bold">Track A:</span><br>Computer and Communication Networks and Technologies</h4>
+              <!----------------------
+                A.1.1 - 23 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2">23 September 2019 (Monday)</p>
+              <p class="my-0 text-center font-weight-normal">ICS RAS, Room 9</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="A11">Session A.1.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. U.Krieger, Prof. R.Meshcheryakov</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:00 - 15:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On the Performance of LoRaWAN in Smart City: End Device Design and Communication Coverage <span class="dccn-talk-id">(ID 200)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitry Poluektov; Michail Polovov; Petr Kharin; Martin Stusek; Krystof Zeman; Pavel Masek; Irina Gudkova; Jiri Hosek; Konstantin Samouylov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:15 - 15:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">SDN Load prediction algorithm based on artificial intelligence <span class="dccn-talk-id">(ID 192)</p>
+                  <p class="my-0 dccn-text-small">Artem Volkov; Konstantin Proshutinskiy; Abuzar B. M. Adam; Abdelhamied Ateya; Ammar Muthanna; Andrey Koucheryavy</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:30 - 15:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Multichannel diffusion approximation models for the evaluation of multichannel communication networks <span class="dccn-talk-id">(ID 235)</p>
+                  <p class="my-0 dccn-text-small">Tadeusz Czachorski</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:45 - 16:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">QoS based method for energy optimization in ZigBee Wireless Sensor Networks <span class="dccn-talk-id">(ID 169)</p>
+                  <p class="my-0 dccn-text-small">Alexander Alexandrov; Vladimir Monov; Rumen Andreev; Yordan Doshev</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:00 - 16:30</span></div>
+                <div class="col-12">
+                    <p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p>
+                  </div>
+              </div>
+      
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:30 - 16:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Performance analysis of UHF RFID system with mobile tags, session switching and power resets using markovian stochastic model</p>
+                  <p class="my-0 dccn-text-small">Andrey Larionov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:45 - 17:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Large-scale centralized scheduling of short-range wireless links <span class="dccn-talk-id">(ID 220)</span></p>
+                  <p class="my-0 dccn-text-small">Pyattaev Alexander; Gerasimenko Mikhail</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:00 - 17:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Energy Estimation for VANET Performance Based Robust Neural Networks Learning <span class="dccn-talk-id">(ID 160)</span></p>
+                  <p class="my-0 dccn-text-small">Ali R. Abdellah; Ammar Muthanna; Andrey Koucheryavy</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:15 - 17:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">PD-NOMA power coefficients calculation while using QAM signals <span class="dccn-talk-id">(ID 152)</span></p>
+                  <p class="my-0 dccn-text-small">Kryukov Yakov; Pokamestov Dmitriy; Rogozhnikov Eugeniy</p>
+                </div>
+              </div>
+
+
+              <!----------------------
+                A.2.1 - 24 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2 mt-5">24 September 2019 (Tuesday)</p>
+              <p class="my-0 text-center font-weight-normal">ICS RAS, Room 9</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="A21">Session A.2.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. K.Samouylov, Prof. T.Czachorski</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:00 - 10:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">A Problem of Optimal Location of Given Set of Base Stations in Wireless Networks with Linear Topology <span class="dccn-talk-id">(ID 149)</span></p>
+                  <p class="my-0 dccn-text-small">Amir Mukhtarov; Oleg Pershin; Roman Ivanov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:15 - 10:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Characterizing the Degree of LTE Involvement in Supporting Session Continuity in Street Deployment of NR Systems <span class="dccn-talk-id">(ID 28)</span></p>
+                  <p class="my-0 dccn-text-small">Vyacheslav Begishev; Dmitri Moltchanov; Andrey Samuylov; Konstantin Samouylov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:30 - 10:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">The increasing of payload capacity of LPWAN using the distributed linear prediction algorithm <span class="dccn-talk-id">(ID 170)</span></p>
+                  <p class="my-0 dccn-text-small">Sergey Dushin; Sergey Frolov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:45 - 11:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Research results of the implementation developed network window system for Unix-compatible operating systems for remote control of the test bench <span class="dccn-talk-id">(ID 119)</span></p>
+                  <p class="my-0 dccn-text-small">Vladimir Sukhoverkhy</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:00 - 11:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Statistical Model of Computing Experiment on Digital Color Correction <span class="dccn-talk-id">(ID 151)</span></p>
+                  <p class="my-0 dccn-text-small">Ekaterina Borevich; Serg Mescheryakov; Victor Yanchus</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:15 - 11:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Модели и методы гибридной методологии для оценки и выбора параметров конвергентных сетей радиодоступа 5G <span class="dccn-talk-id">(ID 126)</span></p>
+                  <p class="my-0 dccn-text-small">Shirokov Vladimir</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:30 - 12:00</span></div>
+                <div class="col-12">
+                  <p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:00 - 12:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Using a Step Distribution Function to Describe the Incoming Packet Flow <span class="dccn-talk-id">(ID 54)</span></p>
+                  <p class="my-0 dccn-text-small">Nikolai Sokolov; Andrei Levakov; Andrei Sokolov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:15 - 12:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">The performance evaluation of IEEE 802.11 for different sized DCF WLAN under unsaturated condition <span class="dccn-talk-id">(ID 21)</span></p>
+                  <p class="my-0 dccn-text-small">Leonid Abrosimov; Margarita Rudenkova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:30 - 12:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Проблема управления сетевыми ресурсам при реализации грид-систем <span class="dccn-talk-id">(ID 93)</span></p>
+                  <p class="my-0 dccn-text-small">Shagen Arutyunyan; Leonid Abrosimov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:45 - 13:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Model and algorithm of next generation optical switching systems based on 8x8 elements <span class="dccn-talk-id">(ID 74)</span></p>
+                  <p class="my-0 dccn-text-small">Elizaveta Barabanova; Konstantin Vytovtov; Victor Podlazov</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:00 - 13:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Mathematical Model Of Four-Dimensional Communication Systems Based On Block Diagonal Matrix With 2x2 Blocks <span class="dccn-talk-id">(ID 79)</span></p>
+                  <p class="my-0 dccn-text-small">Konstantin Vytovtov; Elizaveta Barabanova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:15 - 13:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Сравнение различных подходов к построению бортовых коммутируемых сетей <span class="dccn-talk-id">(ID 144)</span></p>
+                  <p class="my-0 dccn-text-small">Vasily Balashov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:30 - 13:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Автоматизированный режим подготовки распорядительных документов в управленческой организации <span class="dccn-talk-id">(ID 87)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitrii Volchkov; Nina Bakanova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:45 - 14:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">A routing algorithm based on AQRERM with estimates of waiting time in the neighbor’s queue <span class="dccn-talk-id">(ID 230)</span></p>
+                  <p class="my-0 dccn-text-small">Maksim Kavalerov</p>
+                </div>
+              </div>
+
+
+
+
+              <!----------------------
+                A.2.2 - 24 Sep. 2019
+              ----------------------->
+              <p class="mt-5 mb-0 text-left font-weight-bold" id="A22">Session A.2.2</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. A.Dvorkovich, Prof. C.Kim</p>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:00 - 15:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">PPPXoE - Adaptive Link-Layer Protocol for High-Speed Packet Networks <span class="dccn-talk-id">(ID 195)</span></p>
+                  <p class="my-0 dccn-text-small">Aleksandr Ivchenko; Lyubov Antyufrieva; Alexander Dvorkovich</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:15 - 15:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Synthesis of High-Performance Window Functions Using Minimization of Difference between its Waveform and Spectrum <span class="dccn-talk-id">(ID 247)</span></p>
+                  <p class="my-0 dccn-text-small">Alexander Dvorkovich; Viktor Dvorkovich</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:30 - 15:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Dolph-Chebyshev and Barcilon-Temes Window Functions Modification <span class="dccn-talk-id">(ID 234)</span></p>
+                  <p class="my-0 dccn-text-small">Viktor Dvorkovich; Alexander Dvorkovich</p>
+                </div>
+              </div>
+                
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:45 - 16:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">The use of Intra Prediction method in wavelet-based video coding systems <span class="dccn-talk-id">(ID 174)</span></p>
+                  <p class="my-0 dccn-text-small">Gleb Verba; Kirill Bystrov; Viktor Dvorkovich; Gennady Gryzov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:30 - 16:45</span>
+                </div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">The use of Asymmetric Numeral Systems entropy encoding in video compression <span class="dccn-talk-id">(ID 137)</span></p>
+                  <p class="my-0 dccn-text-small">Fedor Konstantinov; Gennady Gryzov; Kirill Bystrov</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:15 - 16:45</span></div>
+                <div class="col-12">
+                    <p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p>
+                  </div>
+              </div>
+      
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:45 - 17:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Optimal quantization methods in problems of visual data multichannel wavelet-compression <span class="dccn-talk-id">(ID 133)</span></p>
+                  <p class="my-0 dccn-text-small">Gleb Verba; Kirill Bystrov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:00 - 17:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Adaptation of the frame synchronization algorithm of the second generation satellite broadcasting standard DVB-S2 for communication system <span class="dccn-talk-id">(ID 228)</span></p>
+                  <p class="my-0 dccn-text-small">Lyubov Antyufrieva; Aleksandr Ivchenko</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:15 - 17:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Системная интеграция и обоснование условий применения способа передачи сообщений без этапности установления соединений <span class="dccn-talk-id">(ID 205)</span></p>
+                  <p class="my-0 dccn-text-small">Aleksei Rozhnov; Igor Lobanov</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:30 - 17:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Joint channel estimation and data decoding for COFDM wireless communication systems <span class="dccn-talk-id">(ID 8)</span></p>
+                  <p class="my-0 dccn-text-small">Mityagin Kirill; Levchenko Andrew</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:45 - 18:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Multipath redundant transfer of critical to delays packets based on UDP protocol <span class="dccn-talk-id">(ID 75)</span></p>
+                  <p class="my-0 dccn-text-small">Noskov Ilya; Bogatyrev Vladimir</p>
+                </div>
+              </div>
+    
+
+
+              <!----------------------
+                A.4.1 - 26 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2 mt-5">26 September 2019 (Thursday)</p>
+              <p class="my-0 text-center font-weight-normal">RUDN, Faculty of Science, Room 329</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="A41">Session A.4.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: T.Atanasova, V.Vishnevsky</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:00 - 10:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Modeling of a Two-Way Communication System with a Special Searching for Customers <span class="dccn-talk-id">(ID 172)</span></p>
+                  <p class="my-0 dccn-text-small">Attila Kuki</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:15 - 10:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">5G New Radio System Performance Analysis Using Limited Resource Queuing Systems with Varying Requirements <span class="dccn-talk-id">(ID 189)</span></p>
+                  <p class="my-0 dccn-text-small">Valeriy Naumov; Vitalii Beschastnyi; Daria Ostrikova; Yuliya Gaidamaka</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:30 - 10:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On the stability of D2D connection with the use of kinetic equation for SIR empirical distribution function density <span class="dccn-talk-id">(ID 34)</span></p>
+                  <p class="my-0 dccn-text-small">Yurii Orlov; Anastasia Ivchenko; Natalia Podzharaya; Vsevolod Shorgin; Aliaksandr Birukou; Yuliya Gaidamaka; Konstantin Samouylov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:45 - 11:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Accurate and interval estimates of the probability of network service availability for communication networks <span class="dccn-talk-id">(ID 106)</span></p>
+                  <p class="my-0 dccn-text-small">Yuriy Zaychenko; Volodymyr Vasyliev; Dmytro Vishtal; Natalia Lyubashenko</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:00 - 11:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Communication network system modeling for application in ship <span class="dccn-talk-id">(ID 44)</span></p>
+                  <p class="my-0 dccn-text-small">Kinh Hoang</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:15 - 11:45</span></div>
+                <div class="col-12">
+                  <p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:45 - 12:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Performance of transport connection with selective failure mode when competing for throughput of data transmission path <span class="dccn-talk-id">(ID 239)</span></p>
+                  <p class="my-0 dccn-text-small">Pavel Mikheev; Pavel Pristupa; Sergey Sushchenko</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:00 - 12:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Вызовы информационного общества <span class="dccn-talk-id"></span></p>
+                  <p class="my-0 dccn-text-small">Dmitry Kochetkov, Nail Sadekov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:15 - 12:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">The Construction of Time-Series Data in the Multidimensional Information System Designed Using the Cluster Method <span class="dccn-talk-id">(ID 179)</span></p>
+                  <p class="my-0 dccn-text-small">Maxim Fomin; Sergey Shorokhov</p>
+                </div>
+              </div>
+              
+            </div>    
+          </div>
+
+          
+
+
+
+
+
+          <!----------------------------------------------------------------------
+            TRACK B
+          ------------------------------------------------------------------------>
+          <div class="col-12 col-lg-4 px-0">
+            <div class="dccn-panel mx-lg-1" id="trackB">
+              <h4 class="dccn-panel-subtitle"><span class="font-weight-bold">Track B:</span><br>Analytical Modeling of Distributed Systems</h4>
+              <!----------------------
+                B.1.1 - 23 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2">23 September 2019 (Monday)</p>
+              <p class="my-0 text-center font-weight-normal">ICS RAS, Room 10</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="B11">Session B.1.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. A.Dudin, Prof. M.Pagano</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:00 - 15:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Optimal control by the queue with rate and quality of service depending on the amount of harvested energy as a model of the node of wireless sensor network <span class="dccn-talk-id">(ID 99)</span></p>
+                  <p class="my-0 dccn-text-small">Alexander Dudin; Sergey Dudin; Chesoong Kim</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:15 - 15:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Adaptive cyclic polling systems: analysis and application to the broadband wireless networks <span class="dccn-talk-id">(ID 181)</span></p>
+                  <p class="my-0 dccn-text-small">Vladimir Vishnevsky; Olga Semenova; Tan Bui</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:30 - 15:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Estimation of the Probability Density Parameters of the Values of Inter-event Interval Duration in Recurrent Synchronous Generalized Flow of the Second Order by the Method of Moments <span class="dccn-talk-id">(ID 55)</span></p>
+                  <p class="my-0 dccn-text-small">Liudmila Nezhel'skaya; Michele Pagano; Ekaterina Sidorova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:45 - 16:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Unreliable Queueing System with Threshold Strategy of Connection of the Reserve Server <span class="dccn-talk-id">(ID 116)</span></p>
+                  <p class="my-0 dccn-text-small">Valentina Klimenok; Chesoong Kim; Vladimir Vishnevsky; Alexander Dudin</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:00 - 16:30</span></div>
+                <div class="col-12">
+                  <p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:30 - 16:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Transient analysis of a repairable single server queue with working vacations and system disasters <span class="dccn-talk-id">(ID 62)</span></p>
+                  <p class="my-0 dccn-text-small">MIYANAWATHURA IHALA GAMAGE SURANGA SAMPATH; KALIDASS K</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:45 - 17:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On optimal control policy of MAP(t)/M/2 queueing System with heterogeneous servers and periodic arrival process <span class="dccn-talk-id">(ID 194)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitry Efrosinin; Natalia Stepanova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:00 - 17:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Модель функционирования сенсора беспроводной сети с учетом возможных сбоев при передаче информации <span class="dccn-talk-id">(ID 12)</span></p>
+                  <p class="my-0 dccn-text-small">Sergey Dudin; Olga Dudina; Alexander Dudin</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:15 - 17:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Organization of a reserved inter-machine exchange with general and separate queues distributed over computer nodes for access to aggregated channels <span class="dccn-talk-id">(ID 150)</span></p>
+                  <p class="my-0 dccn-text-small">Vladimir bogatyrev; Ivan Slastikhin; Aleksey Derkach</p>
+                </div>
+              </div>
+  
+
+              <!----------------------
+                B.2.1 - 24 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2 mt-5">24 September 2019 (Tuesday)</p>
+              <p class="my-0 text-center font-weight-normal">ICS RAS, Room 10</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="B21">Session B.2.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: </p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:00 - 10:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Discrete-Time Insurance Models. Optimization of their Performance by Reinsurance and Bank Loans <span class="dccn-talk-id">(ID 134)</span></p>
+                  <p class="my-0 dccn-text-small">Ekaterina Bulinskaya</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:15 - 10:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Statistical distributions of values of partial correlators of aggregated network traffic packets <span class="dccn-talk-id">(ID 63)</span></p>
+                  <p class="my-0 dccn-text-small">Andrey Krasnov; Dmitrii Nikol'skii</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:30 - 10:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Heterogeneous Queueing System MAP/GI(n)/∞ with Random Customers’ Capacities <span class="dccn-talk-id">(ID 208)</span></p>
+                  <p class="my-0 dccn-text-small">Ekaterina Lisovskaya; Yuliya Gaidamaka; Michele Pagano; Ekaterina Pankratova; Svetlana Moiseeva</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:45 - 11:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Retrial Queue for Modeling Best Effort Traffic with Minimum Bit Rate Guarantee Transmission under Network Slicing <span class="dccn-talk-id">(ID 201)</span></p>
+                  <p class="my-0 dccn-text-small">Ekaterina Markova; Yves Adou; Anastasia Golskaia; Daria Ivanova; Luis Correia</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:00 - 11:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Approximate Product Form Solution for Performance Analysis of Wireless Network with Dynamic Power Control Policy <span class="dccn-talk-id">(ID 161)</span></p>
+                  <p class="my-0 dccn-text-small">Yves Adou; Ekaterina Markova; Irina Gudkova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:15 - 11:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Detection and Detectability of Changes in a Multiparameter Exponential Distribution <span class="dccn-talk-id">(ID 58)</span></p>
+                  <p class="my-0 dccn-text-small">Igor Nikiforov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:30 - 12:00</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:00 - 12:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Modeling and Reliability Analysis of a Redundant Transport System in a Markovian Environment <span class="dccn-talk-id">(ID 71)</span></p>
+                  <p class="my-0 dccn-text-small">Udo R. Krieger; Natalia Markovich</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:15 - 12:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Cluster Modeling of a Lindley Process with an Application to Queuing <span class="dccn-talk-id">(ID 73)</span></p>
+                  <p class="my-0 dccn-text-small">Natalia Markovich; Rostislav Razumchik</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:30 - 12:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Random graph node classification by extremal index of PageRank <span class="dccn-talk-id">(ID 96)</span></p>
+                  <p class="my-0 dccn-text-small">Maxim Ryzhov; Natalia Markovich</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:45 - 13:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Solution of Lindley integral equation for correlated traffic <span class="dccn-talk-id">(ID 184)</span></p>
+                  <p class="my-0 dccn-text-small">Igor Kartashevskiy</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:00 - 13:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Application of time series techniques for random number generator analysis <span class="dccn-talk-id">(ID 40)</span></p>
+                  <p class="my-0 dccn-text-small">Ivan Blagoev</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:15 - 13:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On estimation of Weibull-tail and log-Weibull-tail distributions for modeling end-to-end delay <span class="dccn-talk-id">(ID 42)</span></p>
+                  <p class="my-0 dccn-text-small">Igor Rodionov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:30 - 13:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Исследование системы обслуживания с групповым марковским потоком, без буфера и дисциплиной полного отказа, обслуживанием фазового типа и использованием разделения процессора при превышении числом активных пользователей порогового значения <span class="dccn-talk-id">(ID 11)</span></p>
+                  <p class="my-0 dccn-text-small">Sergey Dudin; Olga Dudina; Alexander Dudin</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:45 - 14:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Исследование системы с распределением времени обслуживания фазового типа и использованием дисциплины разделения процессора при превышении лимита суммарной интенсивности обслуживания запросов <span class="dccn-talk-id">(ID 9)</span></p>
+                  <p class="my-0 dccn-text-small">Sergey Dudin; Olga Dudina; Alexander Dudin</p>
+                </div>
+              </div>
+
+
+
+              <!----------------------
+                B.2.2 - 24 Sep. 2019
+              ----------------------->
+              <p class="mt-5 mb-0 text-left font-weight-bold" id="B22">Session B.2.2</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. A.Melikov, Prof. A.Nazarov</p>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:00 - 15:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Asymptotic-Diffusion Analysis for Retrial Queue with Batch Poisson Input and Multiple Types of Outgoing Calls <span class="dccn-talk-id">(ID 238)</span></p>
+                  <p class="my-0 dccn-text-small">Anatoly Nazarov; Svetlana Paul; Olga Lizyura</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:15 - 15:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Resource Queueing System with the Requirements Copying at the Second Phase <span class="dccn-talk-id"></span></p>
+                  <p class="my-0 dccn-text-small">Anastasia Galileyskaya; Ekaterina Lisovskaya; Ekaterina Fedorova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:30 - 15:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Asymptotic Analysis of the Output Process in Retrial Queue with Markov-Modulated Poisson Input under Low Rate of Retrials Condition <span class="dccn-talk-id">(ID 237)</span></p>
+                  <p class="my-0 dccn-text-small">Ivan Lapatin; Anatoly Nazarov</p>
+                </div>
+              </div>
+                
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:45 - 16:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Negative Binomial Distribution Approximation in Retrial Queue M/M/1 with Collisions and Impatient Calls <span class="dccn-talk-id">(ID 104)</span></p>
+                  <p class="my-0 dccn-text-small">Elena Danilyuk; Ekaterina Fedorova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:00 - 16:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Estimation of the Probability Density Parameters of the Interval Duration between Events in Correlated Semi-synchronous Event Flow of the Second Order by the Method of Moments <span class="dccn-talk-id">(ID 61)</span></p>
+                  <p class="my-0 dccn-text-small">Diana Tumashkina; Liudmila Nezhel'skaya</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:15 - 16:45</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+      
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:45 - 17:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Performance analysis of IEEE 802.11 DCF wireless multihop networks using queueing systems with phasetype distributions of service time <span class="dccn-talk-id"></span></p>
+                  <p class="my-0 dccn-text-small">Andrey Larionov, Vladimir Vishnevsky</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:00 - 17:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Mathematical Models of The Queuing Systems with MMPP Flow and Instantaneous Feedback <span class="dccn-talk-id">(ID 138)</span></p>
+                  <p class="my-0 dccn-text-small">Agassi Melikov; Sevinj Aliyeva</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:15 - 17:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Unreliable Queueing System with Threshold Strategy of Connection of the Reserve Server <span class="dccn-talk-id">(ID 116)</span></p>
+                  <p class="my-0 dccn-text-small">Valentina Klimenok; Chesoong Kim; Vladimir Vishnevsky; Alexander Dudin</p>
+                </div>
+              </div>
+
+
+              <!----------------------
+                B.4.1 - 26 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2 mt-5">26 September 2019 (Thursday)</p>
+              <p class="my-0 text-center font-weight-normal">RUDN, Faculty of Science, Room 219</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="B41">Session B.4.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. A.Andronov, Prof. V.Rykov</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:00 - 10:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Estimation of the parameters of continuous-time finite Markov chain <span class="dccn-talk-id">(ID 51)</span></p>
+                  <p class="my-0 dccn-text-small">Diana Santalova; Alexander Andronov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:15 - 10:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Renewal Redundant Systems Under the Marshall-Olkin Failure Model. Sensitivity Analysis <span class="dccn-talk-id"></span></p>
+                  <p class="my-0 dccn-text-small">Vladimir Rykov; Boyan Dimitrov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:30 - 10:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Reliability Analysis of Systems with Hybrid Recovery and Imperfect Built-in-Test <span class="dccn-talk-id">(ID 76)</span></p>
+                  <p class="my-0 dccn-text-small">Armen Stepanyants; Valentina Viktorova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:45 - 11:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Rate of convergence of Markov Queueing Systems with dynamic routing <span class="dccn-talk-id">(ID 158)</span></p>
+                  <p class="my-0 dccn-text-small">Elmira Kalimulina</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:00 - 11:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Об одной системе восстановления с тёплым резервом <span class="dccn-talk-id">(ID 142)</span></p>
+                  <p class="my-0 dccn-text-small">Г.А.Зверкина</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:15 - 11:45</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:45 - 12:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Изучение числовых характеристик имитационной модели адаптивного управления конфликтными потоками неоднородных требований <span class="dccn-talk-id">(ID 26)</span></p>
+                  <p class="my-0 dccn-text-small">Mikhail Fedotkin; Evgeniy Kudryavtsev</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:00 - 12:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Stationary Characteristics of the G/MSP/n/∞ Queue with General Renovation <span class="dccn-talk-id">(ID 94)</span></p>
+                  <p class="my-0 dccn-text-small">Lusine Meykhanadzhyan; Ivan Zaryadov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:15 - 12:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Resource Queueing System with Paired Requests and Their Parallel Service <span class="dccn-talk-id">(ID 68)</span></p>
+                  <p class="my-0 dccn-text-small">Tatyana Bushkova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:30 - 12:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Algorithms and numerical results for DD priority discipline with semi-Markov switching <span class="dccn-talk-id">(ID 56)</span></p>
+                  <p class="my-0 dccn-text-small">Gheorghe Mishkoy; Lilia Mitev</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:45 - 13:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Расчёт характеристик надёжности лётного модуля привязной мультироторной беспилотной высотной платформы на основе гексакоптера <span class="dccn-talk-id">(ID 245)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitry Kozyrev; Duy Phuong Nguyen</p>
+                </div>
+              </div>
+
+              
+              <!----------------------
+                B.4.2 - 24 Sep. 2019
+              ----------------------->
+              <p class="mt-5 mb-0 text-left font-weight-bold" id="B42">Session B.4.2</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: E.Morozov , S.Stepanov</p>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">14:00 - 14:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Group Polling Method Upon the Independent Activity of Sensors in Unsynchronized Wireless Monitoring Networks <span class="dccn-talk-id">(ID 98)</span></p>
+                  <p class="my-0 dccn-text-small">Ivan Tsitovich</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">14:15 - 14:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On estimation of rare event probability in degradation process with light-tailed stages <span class="dccn-talk-id">(ID 175)</span></p>
+                  <p class="my-0 dccn-text-small">Alexandra Borodina; Evsey Morozov; Oleg Lukashenko</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">14:30 - 14:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On Failure Rate Comparison of Finite Multiserver Systems <span class="dccn-talk-id">(ID 156)</span></p>
+                  <p class="my-0 dccn-text-small">Alexander Rumyantsev; Evsey Morozov; Irina Peshkova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">14:45 - 15:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">A Multiclass Retrial System With Coupled Orbits And Mixed Service Interruptions <span class="dccn-talk-id">(ID 60)</span></p>
+                  <p class="my-0 dccn-text-small">Taisia Morozova; Evsey Morozov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:00 - 15:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Асимптотический анализ N-модели с приоритетом <span class="dccn-talk-id">(ID 188)</span></p>
+                  <p class="my-0 dccn-text-small">Mariia Maltseva</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:15 - 15:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Large deviation approximation for a constant retrial rate system <span class="dccn-talk-id">(ID 177)</span></p>
+                  <p class="my-0 dccn-text-small">Ksenia Zhukova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:30 - 16:00</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+      
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:00 - 16:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">The Modeling of Call Center Functioning in Case of Overload <span class="dccn-talk-id">(ID 129)</span></p>
+                  <p class="my-0 dccn-text-small">Sergey Stepanov; Mikhail Stepanov; Hanna Zhurko</p>
+                </div>
+              </div>
+                
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:15 - 16:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Hidden Markov model of information system with component-wise storage devices <span class="dccn-talk-id">(ID 155)</span></p>
+                  <p class="my-0 dccn-text-small">Yuriy Obzherin; Stanislav Sidorov; Mikhail Nikitin</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:30 - 16:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On verification of stability of multi-orbit system with general retrials: simulation approach <span class="dccn-talk-id">(ID 157)</span></p>
+                  <p class="my-0 dccn-text-small">Ruslana Nekrasova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:45 - 17:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Evaluation of Information Transmission Resource While Processing Heterogeneous Traffic in Data Networks <span class="dccn-talk-id">(ID 105)</span></p>
+                  <p class="my-0 dccn-text-small">Veronika Antonova; Liudmila Zhilyakova; Nikolay Kuznetsov; Natalya Grechishkina</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:00 - 17:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Построение математической модели класса систем двухрежимного циклического управления перекрестком <span class="dccn-talk-id">(ID 78)</span></p>
+                  <p class="my-0 dccn-text-small">Fedor Rodionov; Maria Kocheganova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:15 - 17:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Cognitive Network States Analysis under Vertical Handover with Markov Chains Model <span class="dccn-talk-id">(ID 59)</span></p>
+                  <p class="my-0 dccn-text-small">Alexander Grebeshkov</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+          <!----------------------------------------------------------------------
+            TRACK C
+          ------------------------------------------------------------------------>
+          <div class="col-12 col-lg-4 px-0">
+            <div class="dccn-panel ml-lg-1" id="trackC">
+              <h4 class="dccn-panel-subtitle"><span class="font-weight-bold">Track C:</span><br>Distributed Systems Applications</h4>
+              <!----------------------
+                C.1.1 - 23 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2">23 September 2019 (Monday)</p>
+              <p class="my-0 text-center font-weight-normal">ICS RAS, Room 4</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="C11">Session C.1.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. J.Hosek, Prof. R.Kirichek</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:00 - 15:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Human-Computer Mobile Distributed Computing for Time Series Forecasting <span class="dccn-talk-id">(ID 50)</span></p>
+                  <p class="my-0 dccn-text-small">Rumen Ketipov; Georgi Kostadinov; Plamen Petrov; Iliyan Zankinski; Todor Balabanov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:15 - 15:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Minimizing the IoT System Delay with the Edge Gateways <span class="dccn-talk-id">(ID 198)</span></p>
+                  <p class="my-0 dccn-text-small">Van Dai Pham; Trung Hoang; Ruslan Kirichek; Maria Makolkina; Andrey Koucheryavy</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:30 - 15:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Flying Ad-hoc Network for Emergency Based on The IEEE 802.11p Multichannel MAC Protocol <span class="dccn-talk-id">(ID 171)</span></p>
+                  <p class="my-0 dccn-text-small">Truong Duy Dinh; Duc Tran Le; Thi Thu Thao Tran; Ruslan Kirichek</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:45 - 16:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Investigation of Video Traﬃc Transmission via Augmented Reality Devices in a Mesh Network <span class="dccn-talk-id">(ID 211)</span></p>
+                  <p class="my-0 dccn-text-small">Maria Makolkina; Violetta Blagodarova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:00 - 16:30</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:30 - 16:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Development of models and methods for using heterogeneous gateways in 5G/IMT-2020 network infrastructure <span class="dccn-talk-id">(ID 221)</span></p>
+                  <p class="my-0 dccn-text-small">Lidiia Vlasenko; Vyacheslav Kulik; Ruslan Kirichek; Andrey Koucheryavy</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:45 - 17:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Digital Object Architecture as an Approach to Identifying Internet of Things Devices <span class="dccn-talk-id">(ID 196)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitriy Sazonov; Ruslan Kirichek</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:00 - 17:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Multi-criteria method for calculating a SPTA package for a mobile communications vehicle <span class="dccn-talk-id">(ID 204)</span></p>
+                  <p class="my-0 dccn-text-small">Bogdan Pankovsky; Sergey Polesskiy</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:15 - 17:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Effect of heterogeneous traffic on quality of service in 5G network <span class="dccn-talk-id">(ID 185)</span></p>
+                  <p class="my-0 dccn-text-small">OMAR MAHMOOD; Abdukodir Khakimov; Ammar Muthanna; Alexander Paramonov</p>
+                </div>
+              </div>
+  
+
+              <!----------------------
+                C.2.1 - 24 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2 mt-5">24 September 2019 (Tuesday)</p>
+              <p class="my-0 text-center font-weight-normal">ICS RAS, Room 4</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="C21">Session C.2.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. S.Andreev, Prof. M.Sneps-Sneppe</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:00 - 10:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">A robust algorithm for detecting shilling attacks on recommendation systems <span class="dccn-talk-id">(ID 37)</span></p>
+                  <p class="my-0 dccn-text-small">Eugene Shchetinin</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:15 - 10:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On Physical Web for social networks <span class="dccn-talk-id">(ID 43)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitry Namiot; Manfred Sneps-Sneppe</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:30 - 10:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Potential Applications of Smart Contract Technology in Corporate Business Processes <span class="dccn-talk-id">(ID 25)</span></p>
+                  <p class="my-0 dccn-text-small">Oleg Boychenko; Ilya Gavrikov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:45 - 11:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Methodology for Data Processing in Modular IoT System <span class="dccn-talk-id">(ID 191)</span></p>
+                  <p class="my-0 dccn-text-small">Tatiana Atanasova; Kristina Dineva</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:00 - 11:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Medical Images data optimization algorithms for Mobile Applications <span class="dccn-talk-id">(ID 17)</span></p>
+                  <p class="my-0 dccn-text-small">Alexandr Golubev; Peter Bogatencov; Grigore Secrieru</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:15 - 11:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">A method for extracting metadata from heterogeneous data streams <span class="dccn-talk-id">(ID 199)</span></p>
+                  <p class="my-0 dccn-text-small">Van Phu Tran</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:30 - 12:00</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:00 - 12:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Telecommunication high-rise platforms and fracturing monitoring <span class="dccn-talk-id">(ID 113)</span></p>
+                  <p class="my-0 dccn-text-small">Vladimir Vorobiev</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:15 - 12:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Статический анализ исходных текстов программ в системах реального времени <span class="dccn-talk-id">(ID 52)</span></p>
+                  <p class="my-0 dccn-text-small">Konstantin Kostiukhin; Vladimir Galatenko</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:30 - 12:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Анализ архитектур файловых систем для распределённых хранилищ <span class="dccn-talk-id">(ID 240)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitry Aminev; Dmitry Kozyrev; Ruslan Kirichek</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:45 - 13:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Система обратной связи для удаленного источника питания с преобразованием напряжение-частота и оптоволоконной линией передачи <span class="dccn-talk-id">(ID 4)</span></p>
+                  <p class="my-0 dccn-text-small">Konstantin Alikin; Vitaly Morozov</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:00 - 13:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Интернет Вещей в здравоохранении: новые возможности и актуальные проблемы <span class="dccn-talk-id">(ID 36)</span></p>
+                  <p class="my-0 dccn-text-small">Vera Pavlova; Ruslan Glushakov; Rustam Pirmagomedov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:15 - 13:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Исследования применения RFID-индикации полимерных изоляторов в системе электроснабжения <span class="dccn-talk-id">(ID 166)</span></p>
+                  <p class="my-0 dccn-text-small">Tatyana Nesenyuk</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:30 - 13:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Распределенная система сбора данных для задачи анализа компонентного состава природного газа <span class="dccn-talk-id">(ID 46)</span></p>
+                  <p class="my-0 dccn-text-small">Ivan Brokarev; Sergei Vaskovskii</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:45 - 14:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Организм человека как элемент межсегментной коммуникации <span class="dccn-talk-id">(ID 159)</span></p>
+                  <p class="my-0 dccn-text-small">Igor Khromov</p>
+                </div>
+              </div>
+
+
+
+              <!----------------------
+                C.2.2 - 24 Sep. 2019
+              ----------------------->
+              <p class="mt-5 mb-0 text-left font-weight-bold" id="C22">Session C.2.2</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. R.Meshcheryakov, Prof. L.Abrosimov</p>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:00 - 15:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Algorithm for embedding digital watermarks in wireless sensor networks data with control of embedding distortions <span class="dccn-talk-id">(ID 229)</span></p>
+                  <p class="my-0 dccn-text-small">Oleg Evsutin; Roman Meshcheryakov; Vladimir Tolmachev; Andrey Iskhakov; Anastasia Iskhakova</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:15 - 15:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Android testable architecture overview and usage in biometric security systems <span class="dccn-talk-id">(ID 233)</span></p>
+                  <p class="my-0 dccn-text-small">Victor Pasenchuk</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:30 - 15:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Heterogeneous network security effective monitoring method <span class="dccn-talk-id">(ID 101)</span></p>
+                  <p class="my-0 dccn-text-small">Anikina Evgenia; Kalashnikov Andrey</p>
+                </div>
+              </div>
+                
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">15:45 - 16:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Вопросы безопасности SDN в центре обработки данных <span class="dccn-talk-id">(ID 236)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitry Aminev; Vladimir Prokudin; Dmitry Kozyrev; Ruslan Kirichek</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:00 - 16:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Конструкция и требования к кабель-тросу для питания беспилотной привязной телекоммуникационной платформы <span class="dccn-talk-id">(ID 243)</span></p>
+                  <p class="my-0 dccn-text-small">Vishnevsky Vladimir; Kirichek Ruslan; Shirvanyan Artem</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:15 - 16:45</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+      
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">16:45 - 17:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Investigation of a hybrid sensor- and computational network for numerical weather prediction calculations <span class="dccn-talk-id">(ID 16)</span></p>
+                  <p class="my-0 dccn-text-small">Adam Vas; Laszlo Toth</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:00 - 17:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Model of cluster reliability with support of continuity of computational process in the migration of virtual machines <span class="dccn-talk-id">(ID 136)</span></p>
+                  <p class="my-0 dccn-text-small">Vladimir bogatyrev; Stanislav Bogatyrev; Sergey Aleksankov; Aleksey Derkach</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:15 - 17:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">An multiparameter intelligent monitoring system in intensive care <span class="dccn-talk-id">(ID 120)</span></p>
+                  <p class="my-0 dccn-text-small">Kirill Mityagin</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">17:30 - 17:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Мониторинг сетевой активности автоматизированных рабочих мест сотрудников организации <span class="dccn-talk-id">(ID 186)</span></p>
+                  <p class="my-0 dccn-text-small">Buyan Dongak</p>
+                </div>
+              </div>
+
+
+              <!----------------------
+                C.3.1 - 25 Sep. 2019
+              ----------------------->
+              <p class="dccn-panel-subsubtitle mb-2 mt-5">25 September 2019 (Wednesday)</p>
+              <p class="my-0 text-center font-weight-normal">RUDN Faculty of Science, Room 219</p>
+              <p class="mt-2 mb-0 text-left font-weight-bold" id="C31">Session C.3.1</p>
+              <p class="mt-1 dccn-text-small font-italic">Chairs: Prof. L.Sevastianov, Prof. D.Kulyabov</p>
+              
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:00 - 10:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">The bans in finite probability spaces and the problem of small samples <span class="dccn-talk-id">(ID 231)</span></p>
+                  <p class="my-0 dccn-text-small">Alexander Grusho; Elena Timonina; Nick Grusho</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:15 - 10:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Information Flow Control on the Basis of Meta Data <span class="dccn-talk-id">(ID 88)</span></p>
+                  <p class="my-0 dccn-text-small">Alexander Grusho; Nick Grusho; Elena Timonina</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:30 - 10:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Mathematical aspects of stable state estimation of the radio equipment in terms of communication channel functioning <span class="dccn-talk-id">(ID 97)</span></p>
+                  <p class="my-0 dccn-text-small">Fedorenko Vladimir; Vladimir Samoylenko; Alexsey Vinogradenko; Samoylenko Irina; Anikuev Sergey; Sharipov Ildar</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">10:45 - 11:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Some aspects of using the general renovation as the active queue management mechanism <span class="dccn-talk-id">(ID 100)</span></p>
+                  <p class="my-0 dccn-text-small">Hilquias Viana; Ivan Zaryadov; Dmitry Kulyabov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:00 - 11:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">On handling the missing values in precipitation records using machine learning algorithms <span class="dccn-talk-id">(ID 125)</span></p>
+                  <p class="my-0 dccn-text-small">Andrey Gorshenin; Mariia Lebedeva; Svetlana Lukina; Alina Yakovleva</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:15 - 11:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Approach to the intellectual monitoring of the technical condition of difficult dynamic objects on the basis of the systems of a polling <span class="dccn-talk-id">(ID 162)</span></p>
+                  <p class="my-0 dccn-text-small">Budko Pavel; Fedorenko Vladimir; Alexsey Vinogradenko; Vladimir Samoylenko; Pedan Alexey</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">11:30 - 12:00</span></div>
+                <div class="col-12"><p class="font-italic my-0"><i class="fas fa-coffee"></i> Coffee Break</p></div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:00 - 12:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Параметрическая идентификация линейных зависимостей в условиях неопределенности исходных данных <span class="dccn-talk-id">(ID 83)</span></p>
+                  <p class="my-0 dccn-text-small">Olga Kantor</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:15 - 12:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Оценка погрешности экспериментальных данных в задачах параметрической идентификации линейных моделей <span class="dccn-talk-id">(ID 115)</span></p>
+                  <p class="my-0 dccn-text-small">Olga Kantor; Semen Spivak; Bella Khashper</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:30 - 12:45</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Leaky Modes in Laser-printed Integrated Optical Structures <span class="dccn-talk-id">(ID 190)</span></p>
+                  <p class="my-0 dccn-text-small">Dmitriy Divakov; Alexandre Egorov; Konstantin Lovetskiy; Anton Sevastianov; Leonid Sevastianov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">12:45 - 13:00</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">States with minimum dispersion of observables in Kuryshkin-Wodkiewicz quantum mechanics <span class="dccn-talk-id">(ID 212)</span></p>
+                  <p class="my-0 dccn-text-small">Nikolay Tretyakov; Leonid Sevastianov; Alexander Zorin</p>
+                </div>
+              </div>
+  
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:00 - 13:15</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Calculation of Probability Density Distribution of Ultracold Atoms and Molecules in Waveguide-like Traps <span class="dccn-talk-id">(ID 225)</span></p>
+                  <p class="my-0 dccn-text-small">Vladimir Melezhik; Leonid Sevastianov</p>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12 font-weight-normal"><span class="border-bottom">13:15 - 13:30</span></div>
+                <div class="col-12">
+                  <p class="font-weight-bold my-0">Simulation modeling of Strapdown Inertial Navigation Systems (SINS) for dynamic object in different correction modes <span class="dccn-talk-id">(ID 216)</span></p>
+                  <p class="my-0 dccn-text-small">Peter Trefilov; Rinat Galin; Mariya Romanova</p>
+                </div>
+              </div>
+
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+{% endblock %}
