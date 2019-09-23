@@ -17,35 +17,7 @@
 
     <div class="dccn-panel">
       <h3 class="dccn-panel-title">Fees</h3>
-
-      <div class="container dccn-table">
-        <div class="row">
-          <div class="col-9 col-md-10 col-lg-8 col-xl-6">
-            <p>Russian citizens, students of Russian universities <span class="font-weight-normal">with co-authors</span>:</p>
-          </div>
-          <div class="col-3 col-md-2 col-lg-4 col-xl-6">
-            <p>3000 &#8381;</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-9 col-md-10 col-lg-8 col-xl-6">
-            <p>Students of Russian universities <span class="font-weight-normal">without co-authors</span>:</p>
-          </div>
-          <div class="col-3 col-md-2 col-lg-4 col-xl-6">
-            <p>1500 &#8381;</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-9 col-md-10 col-lg-8 col-xl-6">
-            <p>International participants:</p>
-          </div>
-          <div class="col-3 col-md-2 col-lg-4 col-xl-6">
-            <p>200 &euro;</p>
-          </div>
-        </div>
-      </div>
-
-      <p><span class="lead">Discounts: </span> all IEEE members receive a 15% registration fee reduction.</p>
+      {% include 'fees_table.njk' %}
     </div>
 
     <div class="dccn-panel">
